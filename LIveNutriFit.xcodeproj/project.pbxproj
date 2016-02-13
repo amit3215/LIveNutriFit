@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A7D867B1C6F3F4800BCF7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D867A1C6F3F4800BCF7E7 /* AppDelegate.swift */; };
+		3A7D867D1C6F3F4800BCF7E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D867C1C6F3F4800BCF7E7 /* ViewController.swift */; };
+		3A7D86801C6F3F4800BCF7E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D867E1C6F3F4800BCF7E7 /* Main.storyboard */; };
+		3A7D86821C6F3F4800BCF7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D86811C6F3F4800BCF7E7 /* Assets.xcassets */; };
+		3A7D86851C6F3F4800BCF7E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D86831C6F3F4800BCF7E7 /* LaunchScreen.storyboard */; };
+		3A7D86901C6F3F4800BCF7E7 /* LIveNutriFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D868F1C6F3F4800BCF7E7 /* LIveNutriFitTests.swift */; };
+		3A7D869B1C6F3F4800BCF7E7 /* LIveNutriFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D869A1C6F3F4800BCF7E7 /* LIveNutriFitUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A7D868C1C6F3F4800BCF7E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A7D866F1C6F3F4700BCF7E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A7D86761C6F3F4800BCF7E7;
+			remoteInfo = LIveNutriFit;
+		};
+		3A7D86971C6F3F4800BCF7E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A7D866F1C6F3F4700BCF7E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A7D86761C6F3F4800BCF7E7;
+			remoteInfo = LIveNutriFit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A7D86771C6F3F4800BCF7E7 /* LIveNutriFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIveNutriFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7D867A1C6F3F4800BCF7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A7D867C1C6F3F4800BCF7E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A7D867F1C6F3F4800BCF7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A7D86811C6F3F4800BCF7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A7D86841C6F3F4800BCF7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A7D86861C6F3F4800BCF7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7D868B1C6F3F4800BCF7E7 /* LIveNutriFitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LIveNutriFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7D868F1C6F3F4800BCF7E7 /* LIveNutriFitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIveNutriFitTests.swift; sourceTree = "<group>"; };
+		3A7D86911C6F3F4800BCF7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7D86961C6F3F4800BCF7E7 /* LIveNutriFitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LIveNutriFitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7D869A1C6F3F4800BCF7E7 /* LIveNutriFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIveNutriFitUITests.swift; sourceTree = "<group>"; };
+		3A7D869C1C6F3F4800BCF7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A7D86741C6F3F4800BCF7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7D86881C6F3F4800BCF7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7D86931C6F3F4800BCF7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A7D866E1C6F3F4700BCF7E7 = {
+			isa = PBXGroup;
+			children = (
+				3A7D86791C6F3F4800BCF7E7 /* LIveNutriFit */,
+				3A7D868E1C6F3F4800BCF7E7 /* LIveNutriFitTests */,
+				3A7D86991C6F3F4800BCF7E7 /* LIveNutriFitUITests */,
+				3A7D86781C6F3F4800BCF7E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A7D86781C6F3F4800BCF7E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A7D86771C6F3F4800BCF7E7 /* LIveNutriFit.app */,
+				3A7D868B1C6F3F4800BCF7E7 /* LIveNutriFitTests.xctest */,
+				3A7D86961C6F3F4800BCF7E7 /* LIveNutriFitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A7D86791C6F3F4800BCF7E7 /* LIveNutriFit */ = {
+			isa = PBXGroup;
+			children = (
+				3A7D867A1C6F3F4800BCF7E7 /* AppDelegate.swift */,
+				3A7D867C1C6F3F4800BCF7E7 /* ViewController.swift */,
+				3A7D867E1C6F3F4800BCF7E7 /* Main.storyboard */,
+				3A7D86811C6F3F4800BCF7E7 /* Assets.xcassets */,
+				3A7D86831C6F3F4800BCF7E7 /* LaunchScreen.storyboard */,
+				3A7D86861C6F3F4800BCF7E7 /* Info.plist */,
+			);
+			path = LIveNutriFit;
+			sourceTree = "<group>";
+		};
+		3A7D868E1C6F3F4800BCF7E7 /* LIveNutriFitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A7D868F1C6F3F4800BCF7E7 /* LIveNutriFitTests.swift */,
+				3A7D86911C6F3F4800BCF7E7 /* Info.plist */,
+			);
+			path = LIveNutriFitTests;
+			sourceTree = "<group>";
+		};
+		3A7D86991C6F3F4800BCF7E7 /* LIveNutriFitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A7D869A1C6F3F4800BCF7E7 /* LIveNutriFitUITests.swift */,
+				3A7D869C1C6F3F4800BCF7E7 /* Info.plist */,
+			);
+			path = LIveNutriFitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A7D86761C6F3F4800BCF7E7 /* LIveNutriFit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A7D869F1C6F3F4800BCF7E7 /* Build configuration list for PBXNativeTarget "LIveNutriFit" */;
+			buildPhases = (
+				3A7D86731C6F3F4800BCF7E7 /* Sources */,
+				3A7D86741C6F3F4800BCF7E7 /* Frameworks */,
+				3A7D86751C6F3F4800BCF7E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LIveNutriFit;
+			productName = LIveNutriFit;
+			productReference = 3A7D86771C6F3F4800BCF7E7 /* LIveNutriFit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A7D868A1C6F3F4800BCF7E7 /* LIveNutriFitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A7D86A21C6F3F4800BCF7E7 /* Build configuration list for PBXNativeTarget "LIveNutriFitTests" */;
+			buildPhases = (
+				3A7D86871C6F3F4800BCF7E7 /* Sources */,
+				3A7D86881C6F3F4800BCF7E7 /* Frameworks */,
+				3A7D86891C6F3F4800BCF7E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A7D868D1C6F3F4800BCF7E7 /* PBXTargetDependency */,
+			);
+			name = LIveNutriFitTests;
+			productName = LIveNutriFitTests;
+			productReference = 3A7D868B1C6F3F4800BCF7E7 /* LIveNutriFitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A7D86951C6F3F4800BCF7E7 /* LIveNutriFitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A7D86A51C6F3F4800BCF7E7 /* Build configuration list for PBXNativeTarget "LIveNutriFitUITests" */;
+			buildPhases = (
+				3A7D86921C6F3F4800BCF7E7 /* Sources */,
+				3A7D86931C6F3F4800BCF7E7 /* Frameworks */,
+				3A7D86941C6F3F4800BCF7E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A7D86981C6F3F4800BCF7E7 /* PBXTargetDependency */,
+			);
+			name = LIveNutriFitUITests;
+			productName = LIveNutriFitUITests;
+			productReference = 3A7D86961C6F3F4800BCF7E7 /* LIveNutriFitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A7D866F1C6F3F4700BCF7E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "ankit deshwal";
+				TargetAttributes = {
+					3A7D86761C6F3F4800BCF7E7 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					3A7D868A1C6F3F4800BCF7E7 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 3A7D86761C6F3F4800BCF7E7;
+					};
+					3A7D86951C6F3F4800BCF7E7 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 3A7D86761C6F3F4800BCF7E7;
+					};
+				};
+			};
+			buildConfigurationList = 3A7D86721C6F3F4800BCF7E7 /* Build configuration list for PBXProject "LIveNutriFit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A7D866E1C6F3F4700BCF7E7;
+			productRefGroup = 3A7D86781C6F3F4800BCF7E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A7D86761C6F3F4800BCF7E7 /* LIveNutriFit */,
+				3A7D868A1C6F3F4800BCF7E7 /* LIveNutriFitTests */,
+				3A7D86951C6F3F4800BCF7E7 /* LIveNutriFitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A7D86751C6F3F4800BCF7E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7D86851C6F3F4800BCF7E7 /* LaunchScreen.storyboard in Resources */,
+				3A7D86821C6F3F4800BCF7E7 /* Assets.xcassets in Resources */,
+				3A7D86801C6F3F4800BCF7E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7D86891C6F3F4800BCF7E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7D86941C6F3F4800BCF7E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A7D86731C6F3F4800BCF7E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7D867D1C6F3F4800BCF7E7 /* ViewController.swift in Sources */,
+				3A7D867B1C6F3F4800BCF7E7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7D86871C6F3F4800BCF7E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7D86901C6F3F4800BCF7E7 /* LIveNutriFitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7D86921C6F3F4800BCF7E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7D869B1C6F3F4800BCF7E7 /* LIveNutriFitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A7D868D1C6F3F4800BCF7E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A7D86761C6F3F4800BCF7E7 /* LIveNutriFit */;
+			targetProxy = 3A7D868C1C6F3F4800BCF7E7 /* PBXContainerItemProxy */;
+		};
+		3A7D86981C6F3F4800BCF7E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A7D86761C6F3F4800BCF7E7 /* LIveNutriFit */;
+			targetProxy = 3A7D86971C6F3F4800BCF7E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A7D867E1C6F3F4800BCF7E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A7D867F1C6F3F4800BCF7E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A7D86831C6F3F4800BCF7E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A7D86841C6F3F4800BCF7E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A7D869D1C6F3F4800BCF7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A7D869E1C6F3F4800BCF7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A7D86A01C6F3F4800BCF7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LIveNutriFit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChaudharyTech.LIveNutriFit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A7D86A11C6F3F4800BCF7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LIveNutriFit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChaudharyTech.LIveNutriFit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A7D86A31C6F3F4800BCF7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LIveNutriFitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChaudharyTech.LIveNutriFitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LIveNutriFit.app/LIveNutriFit";
+			};
+			name = Debug;
+		};
+		3A7D86A41C6F3F4800BCF7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LIveNutriFitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChaudharyTech.LIveNutriFitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LIveNutriFit.app/LIveNutriFit";
+			};
+			name = Release;
+		};
+		3A7D86A61C6F3F4800BCF7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LIveNutriFitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChaudharyTech.LIveNutriFitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LIveNutriFit;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3A7D86A71C6F3F4800BCF7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LIveNutriFitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ChaudharyTech.LIveNutriFitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LIveNutriFit;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A7D86721C6F3F4800BCF7E7 /* Build configuration list for PBXProject "LIveNutriFit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A7D869D1C6F3F4800BCF7E7 /* Debug */,
+				3A7D869E1C6F3F4800BCF7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A7D869F1C6F3F4800BCF7E7 /* Build configuration list for PBXNativeTarget "LIveNutriFit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A7D86A01C6F3F4800BCF7E7 /* Debug */,
+				3A7D86A11C6F3F4800BCF7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A7D86A21C6F3F4800BCF7E7 /* Build configuration list for PBXNativeTarget "LIveNutriFitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A7D86A31C6F3F4800BCF7E7 /* Debug */,
+				3A7D86A41C6F3F4800BCF7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A7D86A51C6F3F4800BCF7E7 /* Build configuration list for PBXNativeTarget "LIveNutriFitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A7D86A61C6F3F4800BCF7E7 /* Debug */,
+				3A7D86A71C6F3F4800BCF7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A7D866F1C6F3F4700BCF7E7 /* Project object */;
+}
