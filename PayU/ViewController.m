@@ -81,9 +81,10 @@
     TRWebServiceManger *serviceManager = [TRWebServiceManger sharedManager];
     
     
-    NSDictionary *dataDictionary = [NSDictionary dictionaryWithObject:@"" forKey:@"PackageType"];
+    NSMutableDictionary *dataDictionary = [NSMutableDictionary dictionaryWithObject:@"" forKey:@"PackageType"];
+    [dataDictionary setObject:@"0" forKey:@"MentorId"];
     
-    [serviceManager makeRequestWithURL:@"http://52.24.100.222/LiveNutriFitWebService/patient.asmx/GetPackageFeatureDetails" andParameter:dataDictionary andCompletionHandler:^(NSDictionary* response){
+    [serviceManager makeRequestWithURL:@"http://52.24.100.222/LiveNutriFitWebService/patient.asmx/GetPackageFeatureDetailsV1" andParameter:dataDictionary andCompletionHandler:^(NSDictionary* response){
         
         
         
