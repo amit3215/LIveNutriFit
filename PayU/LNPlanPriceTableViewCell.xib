@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanPrice" rowHeight="74" id="KGk-i7-Jjw" customClass="LNPlanPriceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LF-Gs-3VW">
+                        <rect key="frame" x="29" y="9" width="231" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="3qI-c9-94n"/>
+                            <constraint firstAttribute="width" constant="231" id="gjd-i6-CAI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-Jq-opA">
+                        <rect key="frame" x="29" y="44" width="231" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9x8-gK-qLv"/>
+                            <constraint firstAttribute="width" constant="231" id="RNi-pH-cke"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dhk-Jq-opA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="21" id="U9X-Uj-mX7"/>
+                    <constraint firstItem="Dhk-Jq-opA" firstAttribute="top" secondItem="3LF-Gs-3VW" secondAttribute="bottom" constant="3" id="XxN-f1-LrT"/>
+                    <constraint firstItem="3LF-Gs-3VW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="21" id="kSf-6B-pO3"/>
+                    <constraint firstItem="3LF-Gs-3VW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="ohR-CL-TOI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="perDayPriceLabel" destination="Dhk-Jq-opA" id="eg3-sD-9Ub"/>
+                <outlet property="priceAmountlabel" destination="3LF-Gs-3VW" id="C9U-gS-LME"/>
+            </connections>
+            <point key="canvasLocation" x="232" y="130"/>
+        </tableViewCell>
+    </objects>
+</document>

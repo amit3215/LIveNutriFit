@@ -10,12 +10,18 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
   var window: UIWindow?
-
-
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    UIApplication.sharedApplication().statusBarStyle = .LightContent
     // Override point for customization after application launch.
+
+    IQKeyboardManager.sharedManager().enable = true
+    IQKeyboardManager.sharedManager().enableAutoToolbar = false
+    IQKeyboardManager.sharedManager().shouldShowTextFieldPlaceholder = true
+    IQKeyboardManager.sharedManager().keyboardDistanceFromTextField = 100.0
+    UINavigationBar.appearance().barTintColor = UIColor(red: 31.0/255.0, green: 190.0/255.0, blue: 221.0/255.0, alpha: 1.0)
+    UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+    UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
     return true
   }
 
@@ -40,7 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
-
-
+  
 }
 

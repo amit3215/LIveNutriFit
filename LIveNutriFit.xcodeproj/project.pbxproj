@@ -7,13 +7,150 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A664B831C7E1F7A00BFB855 /* GenerateOtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A664B821C7E1F7A00BFB855 /* GenerateOtpViewController.swift */; };
 		3A7D867B1C6F3F4800BCF7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D867A1C6F3F4800BCF7E7 /* AppDelegate.swift */; };
-		3A7D867D1C6F3F4800BCF7E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D867C1C6F3F4800BCF7E7 /* ViewController.swift */; };
-		3A7D86801C6F3F4800BCF7E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D867E1C6F3F4800BCF7E7 /* Main.storyboard */; };
 		3A7D86821C6F3F4800BCF7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D86811C6F3F4800BCF7E7 /* Assets.xcassets */; };
 		3A7D86851C6F3F4800BCF7E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D86831C6F3F4800BCF7E7 /* LaunchScreen.storyboard */; };
 		3A7D86901C6F3F4800BCF7E7 /* LIveNutriFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D868F1C6F3F4800BCF7E7 /* LIveNutriFitTests.swift */; };
 		3A7D869B1C6F3F4800BCF7E7 /* LIveNutriFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D869A1C6F3F4800BCF7E7 /* LIveNutriFitUITests.swift */; };
+		3A7D86B51C6F522900BCF7E7 /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D86B01C6F522900BCF7E7 /* HRToast+UIView.swift */; };
+		3A7D86B91C6F5DEA00BCF7E7 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D86B61C6F5DEA00BCF7E7 /* MKColor.swift */; };
+		3A7D86BA1C6F5DEA00BCF7E7 /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D86B71C6F5DEA00BCF7E7 /* MKLayer.swift */; };
+		3A7D86BB1C6F5DEA00BCF7E7 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D86B81C6F5DEA00BCF7E7 /* MKTextField.swift */; };
+		3A7D86BE1C6F69F700BCF7E7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D86BD1C6F69F700BCF7E7 /* Constant.swift */; };
+		3A7D86C31C6F6C7D00BCF7E7 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D86C21C6F6C7D00BCF7E7 /* LoginButtonView.swift */; };
+		3A7D86C51C6F6C9000BCF7E7 /* LoginButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D86C41C6F6C9000BCF7E7 /* LoginButtonView.xib */; };
+		3ACA80B91C76312000E46546 /* LogInFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA80B81C76312000E46546 /* LogInFirstViewController.swift */; };
+		3AFD06FA1C735A6B00549C48 /* FirstMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD06F91C735A6B00549C48 /* FirstMainView.swift */; };
+		3AFD06FC1C735AD100549C48 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD06FB1C735AD100549C48 /* RegisterViewController.swift */; };
+		3AFD06FF1C7367A900549C48 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD06FE1C7367A900549C48 /* ColorExtension.swift */; };
+		AF16F50B1CC1A20A00EF3430 /* WeightPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F50A1CC1A20A00EF3430 /* WeightPickerTableViewCell.swift */; };
+		AF16F50D1CC35A7F00EF3430 /* HeightTypeSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F50C1CC35A7E00EF3430 /* HeightTypeSelectionTableViewCell.swift */; };
+		AF16F50F1CC3A0CB00EF3430 /* heightPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F50E1CC3A0CB00EF3430 /* heightPickerTableViewCell.swift */; };
+		AF16F5181CC4288100EF3430 /* sliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5171CC4288100EF3430 /* sliderTableViewCell.swift */; };
+		AF16F51A1CC4295E00EF3430 /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5191CC4295E00EF3430 /* CustomSliderView.swift */; };
+		AF16F51D1CC5F4D000EF3430 /* WeightToReduceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F51C1CC5F4D000EF3430 /* WeightToReduceTableViewCell.swift */; };
+		AF16F51F1CC5F4F600EF3430 /* WeightLossJourneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F51E1CC5F4F600EF3430 /* WeightLossJourneyTableViewCell.swift */; };
+		AF16F5211CC5F50E00EF3430 /* TargetMonthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5201CC5F50E00EF3430 /* TargetMonthTableViewCell.swift */; };
+		AF16F5231CC61B7A00EF3430 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5221CC61B7A00EF3430 /* DescriptionTableViewCell.swift */; };
+		AF16F5251CC823E100EF3430 /* Medical2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5241CC823E100EF3430 /* Medical2ViewController.swift */; };
+		AF16F5291CC8242300EF3430 /* LifeStyle2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5281CC8242300EF3430 /* LifeStyle2ViewController.swift */; };
+		AF16F52D1CC8A75200EF3430 /* LifeStyle3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F52C1CC8A75200EF3430 /* LifeStyle3ViewController.swift */; };
+		AF16F5301CC96C3C00EF3430 /* lifeStyle3btnSingleSeltTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F52F1CC96C3C00EF3430 /* lifeStyle3btnSingleSeltTableViewCell.swift */; };
+		AF16F5331CC987A800EF3430 /* lifestyleDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5321CC987A800EF3430 /* lifestyleDayTableViewCell.swift */; };
+		AF16F5351CCAC96400EF3430 /* DailySleepHoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5341CCAC96400EF3430 /* DailySleepHoursTableViewCell.swift */; };
+		AF16F5381CCC082B00EF3430 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5371CCC082B00EF3430 /* HeaderTableViewCell.swift */; };
+		AF16F53B1CCC085300EF3430 /* HeaderWithSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F53A1CCC085300EF3430 /* HeaderWithSwitchTableViewCell.swift */; };
+		AF16F53D1CCC086600EF3430 /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F53C1CCC086600EF3430 /* DropDownTableViewCell.swift */; };
+		AF16F53F1CCC087C00EF3430 /* DrinkPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F53E1CCC087C00EF3430 /* DrinkPickerTableViewCell.swift */; };
+		AF16F5451CCCDA8500EF3430 /* EightbuttonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5441CCCDA8500EF3430 /* EightbuttonTableViewCell.swift */; };
+		AF16F5471CCCE70300EF3430 /* medicalWithSawitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5461CCCE70300EF3430 /* medicalWithSawitchTableViewCell.swift */; };
+		AF16F5491CCCEA7800EF3430 /* DocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F5481CCCEA7800EF3430 /* DocumentTableViewCell.swift */; };
+		AF16F54B1CCD08E700EF3430 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF16F54A1CCD08E700EF3430 /* ThankYouViewController.swift */; };
+		AF1CB6141CD0A49B008DF1C5 /* NumberOfMonthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CB6131CD0A49B008DF1C5 /* NumberOfMonthTableViewCell.swift */; };
+		AF1CB6161CD333FF008DF1C5 /* TwoStepAwayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CB6151CD333FF008DF1C5 /* TwoStepAwayViewController.swift */; };
+		AF1CB6191CD400D7008DF1C5 /* CoachDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CB6181CD400D7008DF1C5 /* CoachDetailsViewController.swift */; };
+		AF1CB61C1CD46C47008DF1C5 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CB61B1CD46C47008DF1C5 /* CAPSPageMenu.swift */; };
+		AF1CB61E1CD46FE7008DF1C5 /* CoachModelViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CB61D1CD46FE7008DF1C5 /* CoachModelViewViewController.swift */; };
+		AF1CB6221CD55FA8008DF1C5 /* CoachDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CB6211CD55FA8008DF1C5 /* CoachDetail.swift */; };
+		AF28C16B1CE74AFD006F1EFD /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C16A1CE74AFD006F1EFD /* MenuCollectionViewCell.swift */; };
+		AF28C16D1CE79BF5006F1EFD /* ButtonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C16C1CE79BF5006F1EFD /* ButtonColor.swift */; };
+		AF28C16F1CE84894006F1EFD /* CoachTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C16E1CE84894006F1EFD /* CoachTableViewCell.swift */; };
+		AF28C1711CE848C8006F1EFD /* CoachSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C1701CE848C8006F1EFD /* CoachSliderTableViewCell.swift */; };
+		AF28C1731CE8E4E2006F1EFD /* WeightLossHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C1721CE8E4E2006F1EFD /* WeightLossHeaderTableViewCell.swift */; };
+		AF28C1751CE8E4F6006F1EFD /* WeightLossTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C1741CE8E4F6006F1EFD /* WeightLossTableViewCell.swift */; };
+		AF28C1F51CEA5CE5006F1EFD /* demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C1F41CEA5CE5006F1EFD /* demo.swift */; };
+		AF28C3931CEA736B006F1EFD /* WeightLossExtraLblTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C3921CEA736B006F1EFD /* WeightLossExtraLblTableViewCell.swift */; };
+		AF324B9A1CDD39630043F854 /* Power7SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF324B991CDD39630043F854 /* Power7SleepViewController.swift */; };
+		AF324B9C1CDD398C0043F854 /* Power7WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF324B9B1CDD398C0043F854 /* Power7WaterViewController.swift */; };
+		AF324B9E1CDD39BF0043F854 /* Power7ProtienViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF324B9D1CDD39BF0043F854 /* Power7ProtienViewController.swift */; };
+		AF324BA01CDD39DC0043F854 /* Power7VeggisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF324B9F1CDD39DC0043F854 /* Power7VeggisViewController.swift */; };
+		AF324BA21CDD3A050043F854 /* Power7FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF324BA11CDD3A050043F854 /* Power7FruitsViewController.swift */; };
+		AF324BA41CDD3A1A0043F854 /* Power7NutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF324BA31CDD3A1A0043F854 /* Power7NutsViewController.swift */; };
+		AF324BA61CDD3A390043F854 /* Power7ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF324BA51CDD3A390043F854 /* Power7ExerciseViewController.swift */; };
+		AF55E88D1CA52607001636B0 /* HavePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF55E88C1CA52607001636B0 /* HavePasswordViewController.swift */; };
+		AF55E8A31CA7A77F001636B0 /* loginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF55E89E1CA7A77F001636B0 /* loginData.swift */; };
+		AF55E8A41CA7A77F001636B0 /* LiveNutriFitApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF55E8A01CA7A77F001636B0 /* LiveNutriFitApi.swift */; };
+		AF55E8A51CA7A77F001636B0 /* ParserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF55E8A11CA7A77F001636B0 /* ParserApi.swift */; };
+		AF5A04081CE4497E0081435D /* BMIStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A04071CE4497E0081435D /* BMIStatusTableViewCell.swift */; };
+		AF5A040A1CE466B30081435D /* DashBoardPower7TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A04091CE466B30081435D /* DashBoardPower7TableViewCell.swift */; };
+		AF5D60AC1CDB1EAE00F823A7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D60A71CDB1EAE00F823A7 /* DashboardViewController.swift */; };
+		AF5D60AD1CDB1EAE00F823A7 /* MyCoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D60A81CDB1EAE00F823A7 /* MyCoachViewController.swift */; };
+		AF5D60AE1CDB1EAE00F823A7 /* PowerOf7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D60A91CDB1EAE00F823A7 /* PowerOf7ViewController.swift */; };
+		AF5D60AF1CDB1EAE00F823A7 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D60AA1CDB1EAE00F823A7 /* ProgressViewController.swift */; };
+		AF5D60B01CDB1EAE00F823A7 /* QuitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D60AB1CDB1EAE00F823A7 /* QuitViewController.swift */; };
+		AF6B95EB1CA3FFB3002D5AD6 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95D31CA3FFB3002D5AD6 /* IQNSArray+Sort.swift */; };
+		AF6B95EC1CA3FFB3002D5AD6 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95D41CA3FFB3002D5AD6 /* IQUIScrollView+Additions.swift */; };
+		AF6B95ED1CA3FFB3002D5AD6 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95D51CA3FFB3002D5AD6 /* IQUITextFieldView+Additions.swift */; };
+		AF6B95EE1CA3FFB3002D5AD6 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95D61CA3FFB3002D5AD6 /* IQUIView+Hierarchy.swift */; };
+		AF6B95EF1CA3FFB3002D5AD6 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95D71CA3FFB3002D5AD6 /* IQUIViewController+Additions.swift */; };
+		AF6B95F01CA3FFB3002D5AD6 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95D81CA3FFB3002D5AD6 /* IQUIWindow+Hierarchy.swift */; };
+		AF6B95F11CA3FFB3002D5AD6 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95DA1CA3FFB3002D5AD6 /* IQKeyboardManagerConstants.swift */; };
+		AF6B95F21CA3FFB3002D5AD6 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95DB1CA3FFB3002D5AD6 /* IQKeyboardManagerConstantsInternal.swift */; };
+		AF6B95F31CA3FFB3002D5AD6 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95DC1CA3FFB3002D5AD6 /* IQKeyboardManager.swift */; };
+		AF6B95F41CA3FFB3002D5AD6 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95DD1CA3FFB3002D5AD6 /* IQKeyboardReturnKeyHandler.swift */; };
+		AF6B95F51CA3FFB3002D5AD6 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95DF1CA3FFB3002D5AD6 /* IQTextView.swift */; };
+		AF6B95F61CA3FFB3002D5AD6 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95E11CA3FFB3002D5AD6 /* IQBarButtonItem.swift */; };
+		AF6B95F71CA3FFB3002D5AD6 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95E21CA3FFB3002D5AD6 /* IQTitleBarButtonItem.swift */; };
+		AF6B95F81CA3FFB3002D5AD6 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95E31CA3FFB3002D5AD6 /* IQToolbar.swift */; };
+		AF6B95F91CA3FFB3002D5AD6 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95E41CA3FFB3002D5AD6 /* IQUIView+IQKeyboardToolbar.swift */; };
+		AF6B95FA1CA3FFB3002D5AD6 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF6B95E61CA3FFB3002D5AD6 /* IQKeyboardManager.bundle */; };
+		AF6B95FB1CA3FFB3002D5AD6 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B95E81CA3FFB3002D5AD6 /* error@2x.png */; };
+		AF6B95FC1CA3FFB3002D5AD6 /* TextFieldValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B95EA1CA3FFB3002D5AD6 /* TextFieldValidator.m */; };
+		AF6B96031CA47910002D5AD6 /* ConnectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6B96021CA47910002D5AD6 /* ConnectionClass.swift */; };
+		AF72ADB91CD00BD600C3F47A /* DocumentSelectionPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72ADB81CD00BD600C3F47A /* DocumentSelectionPopUpViewController.swift */; };
+		AF90776D1CE510050093F87B /* LNCoachListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9077541CE510040093F87B /* LNCoachListViewController.m */; };
+		AF90776E1CE510050093F87B /* LNDietician.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9077561CE510040093F87B /* LNDietician.m */; };
+		AF90776F1CE510050093F87B /* LNPackageFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9077581CE510040093F87B /* LNPackageFeature.m */; };
+		AF9077701CE510050093F87B /* LNPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = AF90775A1CE510040093F87B /* LNPlan.m */; };
+		AF9077711CE510050093F87B /* LNPlanCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF90775C1CE510040093F87B /* LNPlanCellTableViewCell.m */; };
+		AF9077721CE510050093F87B /* LNPlanCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF90775D1CE510040093F87B /* LNPlanCellTableViewCell.xib */; };
+		AF9077731CE510050093F87B /* LNPlanFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = AF90775F1CE510040093F87B /* LNPlanFeature.m */; };
+		AF9077741CE510050093F87B /* LNPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9077611CE510040093F87B /* LNPlanViewController.m */; };
+		AF9077771CE510050093F87B /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9077651CE510050093F87B /* PageContentViewController.m */; };
+		AF9077781CE510050093F87B /* TRWebServiceManger.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9077671CE510050093F87B /* TRWebServiceManger.m */; };
+		AF9077791CE510050093F87B /* Utiity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9077691CE510050093F87B /* Utiity.m */; };
+		AF90777A1CE510050093F87B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF90776B1CE510050093F87B /* ViewController.m */; };
+		AFD116861CBE198F0033A074 /* WeightTypeSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD116851CBE198F0033A074 /* WeightTypeSelectionTableViewCell.swift */; };
+		AFD116911CBF81650033A074 /* WeightPrefrenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD116901CBF81650033A074 /* WeightPrefrenceTableViewCell.swift */; };
+		AFD116961CC0B9790033A074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD116941CC0B9790033A074 /* Main.storyboard */; };
+		AFD1169F1CC0C2FE0033A074 /* LifeStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD116991CC0C2FE0033A074 /* LifeStyleViewController.swift */; };
+		AFD116A01CC0C2FE0033A074 /* MedicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169B1CC0C2FE0033A074 /* MedicalViewController.swift */; };
+		AFD116A11CC0C2FE0033A074 /* Personal2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169D1CC0C2FE0033A074 /* Personal2ViewController.swift */; };
+		AFD116A21CC0C2FE0033A074 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1169E1CC0C2FE0033A074 /* PersonalViewController.swift */; };
+		AFD116A41CC0C3BA0033A074 /* PersonalThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD116A31CC0C3BA0033A074 /* PersonalThirdViewController.swift */; };
+		AFDE3F561CEE7348009C1180 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE3F551CEE7348009C1180 /* ReminderViewController.swift */; };
+		AFDE3F591CEEF7F3009C1180 /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE3F581CEEF7F3009C1180 /* CustomHeaderCell.swift */; };
+		AFDE3F5B1CEF0105009C1180 /* ReminderModificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE3F5A1CEF0105009C1180 /* ReminderModificationViewController.swift */; };
+		AFDE3F5D1CEFB6B3009C1180 /* ReminderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE3F5C1CEFB6B3009C1180 /* ReminderData.swift */; };
+		AFDE3F611CF0512A009C1180 /* TimeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE3F601CF0512A009C1180 /* TimeSelectionViewController.swift */; };
+		AFDE3F651CF1C440009C1180 /* StringToFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE3F641CF1C440009C1180 /* StringToFloat.swift */; };
+		AFDE3F671CF1D40A009C1180 /* ConverInJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE3F661CF1D40A009C1180 /* ConverInJson.swift */; };
+		AFE4FEA01CB78DAF00F0D527 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FE9F1CB78DAF00F0D527 /* BaseViewController.swift */; };
+		AFE4FEA41CB9812500F0D527 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEA31CB9812500F0D527 /* MenuViewController.swift */; };
+		AFE4FEA61CB9A87100F0D527 /* PersonalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEA51CB9A87100F0D527 /* PersonalDetailViewController.swift */; };
+		AFE4FEB31CBA5F6900F0D527 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEB21CBA5F6900F0D527 /* DatePickerDialog.swift */; };
+		AFE4FEB51CBA627600F0D527 /* PersonalGenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEB41CBA627600F0D527 /* PersonalGenderTableViewCell.swift */; };
+		AFE4FEB71CBA84D000F0D527 /* PersonalDobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEB61CBA84D000F0D527 /* PersonalDobTableViewCell.swift */; };
+		AFE4FEB91CBAD5F900F0D527 /* MedicalCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEB81CBAD5F900F0D527 /* MedicalCellTableViewCell.swift */; };
+		AFE4FEBB1CBAEE1300F0D527 /* MedicalBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEBA1CBAEE1300F0D527 /* MedicalBaseTableViewCell.swift */; };
+		AFE4FEBD1CBAF87900F0D527 /* MedicalDetailObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEBC1CBAF87900F0D527 /* MedicalDetailObject.swift */; };
+		AFE4FEBF1CBB87D200F0D527 /* lifeStyleFiveButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEBE1CBB87D100F0D527 /* lifeStyleFiveButtonTableViewCell.swift */; };
+		AFE4FEC31CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEC21CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift */; };
+		B20B769D1CEE4CA200B985A7 /* LNSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B769A1CEE4CA200B985A7 /* LNSettingViewController.m */; };
+		B20B76A41CEE4D5600B985A7 /* LNPlanPriceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B76A21CEE4D5600B985A7 /* LNPlanPriceTableViewCell.m */; };
+		B20B76A51CEE4D5600B985A7 /* LNPlanPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20B76A31CEE4D5600B985A7 /* LNPlanPriceTableViewCell.xib */; };
+		B29EAE5C1CF39BEC0022727A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B29EAE5B1CF39BEC0022727A /* index.html */; };
+		B2D6522D1CF3872E0090389F /* LNHowitWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D652261CF3872E0090389F /* LNHowitWorkViewController.m */; };
+		B2D6522E1CF3872E0090389F /* LNFreeFoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D652281CF3872E0090389F /* LNFreeFoodsViewController.m */; };
+		B2D6522F1CF3872E0090389F /* LNAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D6522A1CF3872E0090389F /* LNAboutViewController.m */; };
+		B2D652301CF3872E0090389F /* LNHowWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D6522C1CF3872E0090389F /* LNHowWorkViewController.m */; };
+		B2D652321CF3876E0090389F /* MainPayU.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D652311CF3876E0090389F /* MainPayU.storyboard */; };
+		B2D652381CF388F40090389F /* LNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D652371CF388F40090389F /* LNBaseViewController.m */; };
+		B2D6523B1CF389300090389F /* LNChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D6523A1CF389300090389F /* LNChangePasswordViewController.m */; };
+		B2D652401CF38CF20090389F /* LNPlanPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D6523F1CF38CF20090389F /* LNPlanPriceViewController.m */; };
+		B2D652431CF38EFA0090389F /* LNChoosePlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D652421CF38EFA0090389F /* LNChoosePlanViewController.m */; };
+		BB8723EB3E42EEAF0F08E447 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBA97D92C7B71E3AC2CACEC /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +171,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A664B821C7E1F7A00BFB855 /* GenerateOtpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateOtpViewController.swift; sourceTree = "<group>"; };
 		3A7D86771C6F3F4800BCF7E7 /* LIveNutriFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIveNutriFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7D867A1C6F3F4800BCF7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A7D867C1C6F3F4800BCF7E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A7D867F1C6F3F4800BCF7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A7D86811C6F3F4800BCF7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A7D86841C6F3F4800BCF7E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A7D86861C6F3F4800BCF7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +183,169 @@
 		3A7D86961C6F3F4800BCF7E7 /* LIveNutriFitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LIveNutriFitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7D869A1C6F3F4800BCF7E7 /* LIveNutriFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIveNutriFitUITests.swift; sourceTree = "<group>"; };
 		3A7D869C1C6F3F4800BCF7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7D86B01C6F522900BCF7E7 /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		3A7D86B61C6F5DEA00BCF7E7 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKColor.swift; sourceTree = "<group>"; };
+		3A7D86B71C6F5DEA00BCF7E7 /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLayer.swift; sourceTree = "<group>"; };
+		3A7D86B81C6F5DEA00BCF7E7 /* MKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTextField.swift; sourceTree = "<group>"; };
+		3A7D86BD1C6F69F700BCF7E7 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3A7D86C21C6F6C7D00BCF7E7 /* LoginButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
+		3A7D86C41C6F6C9000BCF7E7 /* LoginButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginButtonView.xib; sourceTree = "<group>"; };
+		3ACA80B81C76312000E46546 /* LogInFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInFirstViewController.swift; sourceTree = "<group>"; };
+		3AFD06F91C735A6B00549C48 /* FirstMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMainView.swift; sourceTree = "<group>"; };
+		3AFD06FB1C735AD100549C48 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3AFD06FE1C7367A900549C48 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		494A82330D5A5D95674897D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5A11E72C43BA360E6061E5E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AF16F50A1CC1A20A00EF3430 /* WeightPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightPickerTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F50C1CC35A7E00EF3430 /* HeightTypeSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeightTypeSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F50E1CC3A0CB00EF3430 /* heightPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = heightPickerTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5171CC4288100EF3430 /* sliderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sliderTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5191CC4295E00EF3430 /* CustomSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
+		AF16F51C1CC5F4D000EF3430 /* WeightToReduceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightToReduceTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F51E1CC5F4F600EF3430 /* WeightLossJourneyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightLossJourneyTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5201CC5F50E00EF3430 /* TargetMonthTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetMonthTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5221CC61B7A00EF3430 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5241CC823E100EF3430 /* Medical2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medical2ViewController.swift; sourceTree = "<group>"; };
+		AF16F5281CC8242300EF3430 /* LifeStyle2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeStyle2ViewController.swift; sourceTree = "<group>"; };
+		AF16F52C1CC8A75200EF3430 /* LifeStyle3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeStyle3ViewController.swift; sourceTree = "<group>"; };
+		AF16F52F1CC96C3C00EF3430 /* lifeStyle3btnSingleSeltTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lifeStyle3btnSingleSeltTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5321CC987A800EF3430 /* lifestyleDayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lifestyleDayTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5341CCAC96400EF3430 /* DailySleepHoursTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySleepHoursTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5371CCC082B00EF3430 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F53A1CCC085300EF3430 /* HeaderWithSwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderWithSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F53C1CCC086600EF3430 /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F53E1CCC087C00EF3430 /* DrinkPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkPickerTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5441CCCDA8500EF3430 /* EightbuttonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightbuttonTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5461CCCE70300EF3430 /* medicalWithSawitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = medicalWithSawitchTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F5481CCCEA7800EF3430 /* DocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentTableViewCell.swift; sourceTree = "<group>"; };
+		AF16F54A1CCD08E700EF3430 /* ThankYouViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
+		AF1CB6131CD0A49B008DF1C5 /* NumberOfMonthTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfMonthTableViewCell.swift; sourceTree = "<group>"; };
+		AF1CB6151CD333FF008DF1C5 /* TwoStepAwayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoStepAwayViewController.swift; sourceTree = "<group>"; };
+		AF1CB6181CD400D7008DF1C5 /* CoachDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachDetailsViewController.swift; sourceTree = "<group>"; };
+		AF1CB61B1CD46C47008DF1C5 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		AF1CB61D1CD46FE7008DF1C5 /* CoachModelViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachModelViewViewController.swift; sourceTree = "<group>"; };
+		AF1CB6211CD55FA8008DF1C5 /* CoachDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachDetail.swift; sourceTree = "<group>"; };
+		AF28C16A1CE74AFD006F1EFD /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF28C16C1CE79BF5006F1EFD /* ButtonColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonColor.swift; sourceTree = "<group>"; };
+		AF28C16E1CE84894006F1EFD /* CoachTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachTableViewCell.swift; sourceTree = "<group>"; };
+		AF28C1701CE848C8006F1EFD /* CoachSliderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachSliderTableViewCell.swift; sourceTree = "<group>"; };
+		AF28C1721CE8E4E2006F1EFD /* WeightLossHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightLossHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AF28C1741CE8E4F6006F1EFD /* WeightLossTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightLossTableViewCell.swift; sourceTree = "<group>"; };
+		AF28C1F41CEA5CE5006F1EFD /* demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demo.swift; sourceTree = "<group>"; };
+		AF28C3921CEA736B006F1EFD /* WeightLossExtraLblTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightLossExtraLblTableViewCell.swift; sourceTree = "<group>"; };
+		AF324B991CDD39630043F854 /* Power7SleepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power7SleepViewController.swift; sourceTree = "<group>"; };
+		AF324B9B1CDD398C0043F854 /* Power7WaterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power7WaterViewController.swift; sourceTree = "<group>"; };
+		AF324B9D1CDD39BF0043F854 /* Power7ProtienViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power7ProtienViewController.swift; sourceTree = "<group>"; };
+		AF324B9F1CDD39DC0043F854 /* Power7VeggisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power7VeggisViewController.swift; sourceTree = "<group>"; };
+		AF324BA11CDD3A050043F854 /* Power7FruitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power7FruitsViewController.swift; sourceTree = "<group>"; };
+		AF324BA31CDD3A1A0043F854 /* Power7NutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power7NutsViewController.swift; sourceTree = "<group>"; };
+		AF324BA51CDD3A390043F854 /* Power7ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power7ExerciseViewController.swift; sourceTree = "<group>"; };
+		AF55E88C1CA52607001636B0 /* HavePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavePasswordViewController.swift; sourceTree = "<group>"; };
+		AF55E89E1CA7A77F001636B0 /* loginData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginData.swift; sourceTree = "<group>"; };
+		AF55E8A01CA7A77F001636B0 /* LiveNutriFitApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveNutriFitApi.swift; sourceTree = "<group>"; };
+		AF55E8A11CA7A77F001636B0 /* ParserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserApi.swift; sourceTree = "<group>"; };
+		AF5A04071CE4497E0081435D /* BMIStatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIStatusTableViewCell.swift; sourceTree = "<group>"; };
+		AF5A04091CE466B30081435D /* DashBoardPower7TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardPower7TableViewCell.swift; sourceTree = "<group>"; };
+		AF5D60A71CDB1EAE00F823A7 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		AF5D60A81CDB1EAE00F823A7 /* MyCoachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCoachViewController.swift; sourceTree = "<group>"; };
+		AF5D60A91CDB1EAE00F823A7 /* PowerOf7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerOf7ViewController.swift; sourceTree = "<group>"; };
+		AF5D60AA1CDB1EAE00F823A7 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		AF5D60AB1CDB1EAE00F823A7 /* QuitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuitViewController.swift; sourceTree = "<group>"; };
+		AF6B95591CA308C6002D5AD6 /* LIveNutriFit-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LIveNutriFit-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF6B95D31CA3FFB3002D5AD6 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		AF6B95D41CA3FFB3002D5AD6 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		AF6B95D51CA3FFB3002D5AD6 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		AF6B95D61CA3FFB3002D5AD6 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		AF6B95D71CA3FFB3002D5AD6 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		AF6B95D81CA3FFB3002D5AD6 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		AF6B95DA1CA3FFB3002D5AD6 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		AF6B95DB1CA3FFB3002D5AD6 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		AF6B95DC1CA3FFB3002D5AD6 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		AF6B95DD1CA3FFB3002D5AD6 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		AF6B95DF1CA3FFB3002D5AD6 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		AF6B95E11CA3FFB3002D5AD6 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		AF6B95E21CA3FFB3002D5AD6 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		AF6B95E31CA3FFB3002D5AD6 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		AF6B95E41CA3FFB3002D5AD6 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		AF6B95E61CA3FFB3002D5AD6 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		AF6B95E81CA3FFB3002D5AD6 /* error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x.png"; sourceTree = "<group>"; };
+		AF6B95E91CA3FFB3002D5AD6 /* TextFieldValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldValidator.h; sourceTree = "<group>"; };
+		AF6B95EA1CA3FFB3002D5AD6 /* TextFieldValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldValidator.m; sourceTree = "<group>"; };
+		AF6B96021CA47910002D5AD6 /* ConnectionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionClass.swift; sourceTree = "<group>"; };
+		AF72ADB81CD00BD600C3F47A /* DocumentSelectionPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSelectionPopUpViewController.swift; sourceTree = "<group>"; };
+		AF9077531CE510040093F87B /* LNCoachListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNCoachListViewController.h; sourceTree = "<group>"; };
+		AF9077541CE510040093F87B /* LNCoachListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNCoachListViewController.m; sourceTree = "<group>"; };
+		AF9077551CE510040093F87B /* LNDietician.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNDietician.h; sourceTree = "<group>"; };
+		AF9077561CE510040093F87B /* LNDietician.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNDietician.m; sourceTree = "<group>"; };
+		AF9077571CE510040093F87B /* LNPackageFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPackageFeature.h; sourceTree = "<group>"; };
+		AF9077581CE510040093F87B /* LNPackageFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPackageFeature.m; sourceTree = "<group>"; };
+		AF9077591CE510040093F87B /* LNPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPlan.h; sourceTree = "<group>"; };
+		AF90775A1CE510040093F87B /* LNPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPlan.m; sourceTree = "<group>"; };
+		AF90775B1CE510040093F87B /* LNPlanCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPlanCellTableViewCell.h; sourceTree = "<group>"; };
+		AF90775C1CE510040093F87B /* LNPlanCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPlanCellTableViewCell.m; sourceTree = "<group>"; };
+		AF90775D1CE510040093F87B /* LNPlanCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNPlanCellTableViewCell.xib; sourceTree = "<group>"; };
+		AF90775E1CE510040093F87B /* LNPlanFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPlanFeature.h; sourceTree = "<group>"; };
+		AF90775F1CE510040093F87B /* LNPlanFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPlanFeature.m; sourceTree = "<group>"; };
+		AF9077601CE510040093F87B /* LNPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPlanViewController.h; sourceTree = "<group>"; };
+		AF9077611CE510040093F87B /* LNPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPlanViewController.m; sourceTree = "<group>"; };
+		AF9077641CE510040093F87B /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		AF9077651CE510050093F87B /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		AF9077661CE510050093F87B /* TRWebServiceManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRWebServiceManger.h; sourceTree = "<group>"; };
+		AF9077671CE510050093F87B /* TRWebServiceManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRWebServiceManger.m; sourceTree = "<group>"; };
+		AF9077681CE510050093F87B /* Utiity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utiity.h; sourceTree = "<group>"; };
+		AF9077691CE510050093F87B /* Utiity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utiity.m; sourceTree = "<group>"; };
+		AF90776A1CE510050093F87B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AF90776B1CE510050093F87B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AFD116851CBE198F0033A074 /* WeightTypeSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightTypeSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		AFD116901CBF81650033A074 /* WeightPrefrenceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightPrefrenceTableViewCell.swift; sourceTree = "<group>"; };
+		AFD116951CC0B9790033A074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFD116991CC0C2FE0033A074 /* LifeStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeStyleViewController.swift; sourceTree = "<group>"; };
+		AFD1169B1CC0C2FE0033A074 /* MedicalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalViewController.swift; sourceTree = "<group>"; };
+		AFD1169D1CC0C2FE0033A074 /* Personal2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Personal2ViewController.swift; sourceTree = "<group>"; };
+		AFD1169E1CC0C2FE0033A074 /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		AFD116A31CC0C3BA0033A074 /* PersonalThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalThirdViewController.swift; sourceTree = "<group>"; };
+		AFDE3F551CEE7348009C1180 /* ReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		AFDE3F581CEEF7F3009C1180 /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
+		AFDE3F5A1CEF0105009C1180 /* ReminderModificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReminderModificationViewController.swift; path = ../ReminderModificationViewController.swift; sourceTree = "<group>"; };
+		AFDE3F5C1CEFB6B3009C1180 /* ReminderData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderData.swift; sourceTree = "<group>"; };
+		AFDE3F601CF0512A009C1180 /* TimeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSelectionViewController.swift; sourceTree = "<group>"; };
+		AFDE3F641CF1C440009C1180 /* StringToFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToFloat.swift; sourceTree = "<group>"; };
+		AFDE3F661CF1D40A009C1180 /* ConverInJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverInJson.swift; sourceTree = "<group>"; };
+		AFE4FE9F1CB78DAF00F0D527 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AFE4FEA31CB9812500F0D527 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AFE4FEA51CB9A87100F0D527 /* PersonalDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDetailViewController.swift; sourceTree = "<group>"; };
+		AFE4FEB21CBA5F6900F0D527 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		AFE4FEB41CBA627600F0D527 /* PersonalGenderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalGenderTableViewCell.swift; sourceTree = "<group>"; };
+		AFE4FEB61CBA84D000F0D527 /* PersonalDobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDobTableViewCell.swift; sourceTree = "<group>"; };
+		AFE4FEB81CBAD5F900F0D527 /* MedicalCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalCellTableViewCell.swift; sourceTree = "<group>"; };
+		AFE4FEBA1CBAEE1300F0D527 /* MedicalBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalBaseTableViewCell.swift; sourceTree = "<group>"; };
+		AFE4FEBC1CBAF87900F0D527 /* MedicalDetailObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalDetailObject.swift; sourceTree = "<group>"; };
+		AFE4FEBE1CBB87D100F0D527 /* lifeStyleFiveButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lifeStyleFiveButtonTableViewCell.swift; sourceTree = "<group>"; };
+		AFE4FEC21CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeStyleMultipleSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		B20B76991CEE4CA200B985A7 /* LNSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNSettingViewController.h; sourceTree = "<group>"; };
+		B20B769A1CEE4CA200B985A7 /* LNSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNSettingViewController.m; sourceTree = "<group>"; };
+		B20B76A11CEE4D5600B985A7 /* LNPlanPriceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPlanPriceTableViewCell.h; sourceTree = "<group>"; };
+		B20B76A21CEE4D5600B985A7 /* LNPlanPriceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPlanPriceTableViewCell.m; sourceTree = "<group>"; };
+		B20B76A31CEE4D5600B985A7 /* LNPlanPriceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LNPlanPriceTableViewCell.xib; sourceTree = "<group>"; };
+		B29EAE5B1CF39BEC0022727A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		B2D652251CF3872E0090389F /* LNHowitWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNHowitWorkViewController.h; sourceTree = "<group>"; };
+		B2D652261CF3872E0090389F /* LNHowitWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNHowitWorkViewController.m; sourceTree = "<group>"; };
+		B2D652271CF3872E0090389F /* LNFreeFoodsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNFreeFoodsViewController.h; sourceTree = "<group>"; };
+		B2D652281CF3872E0090389F /* LNFreeFoodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNFreeFoodsViewController.m; sourceTree = "<group>"; };
+		B2D652291CF3872E0090389F /* LNAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNAboutViewController.h; sourceTree = "<group>"; };
+		B2D6522A1CF3872E0090389F /* LNAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNAboutViewController.m; sourceTree = "<group>"; };
+		B2D6522B1CF3872E0090389F /* LNHowWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNHowWorkViewController.h; sourceTree = "<group>"; };
+		B2D6522C1CF3872E0090389F /* LNHowWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNHowWorkViewController.m; sourceTree = "<group>"; };
+		B2D652311CF3876E0090389F /* MainPayU.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPayU.storyboard; sourceTree = "<group>"; };
+		B2D652361CF388F40090389F /* LNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNBaseViewController.h; sourceTree = "<group>"; };
+		B2D652371CF388F40090389F /* LNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNBaseViewController.m; sourceTree = "<group>"; };
+		B2D652391CF389300090389F /* LNChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNChangePasswordViewController.h; sourceTree = "<group>"; };
+		B2D6523A1CF389300090389F /* LNChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNChangePasswordViewController.m; sourceTree = "<group>"; };
+		B2D6523E1CF38CF20090389F /* LNPlanPriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPlanPriceViewController.h; sourceTree = "<group>"; };
+		B2D6523F1CF38CF20090389F /* LNPlanPriceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPlanPriceViewController.m; sourceTree = "<group>"; };
+		B2D652411CF38EFA0090389F /* LNChoosePlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNChoosePlanViewController.h; sourceTree = "<group>"; };
+		B2D652421CF38EFA0090389F /* LNChoosePlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNChoosePlanViewController.m; sourceTree = "<group>"; };
+		CBBA97D92C7B71E3AC2CACEC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +353,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8723EB3E42EEAF0F08E447 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +377,23 @@
 		3A7D866E1C6F3F4700BCF7E7 = {
 			isa = PBXGroup;
 			children = (
+				B20B76981CEE4C9100B985A7 /* LNSetting */,
+				AF9077501CE510040093F87B /* PayU */,
+				AF55E89B1CA7A77F001636B0 /* Custom Cell */,
+				AF55E89D1CA7A77F001636B0 /* ModelClass */,
+				AF55E89F1CA7A77F001636B0 /* Shared Class */,
+				AF6B95591CA308C6002D5AD6 /* LIveNutriFit-Bridging-Header.h */,
+				3AFD06FD1C73678A00549C48 /* Extensionclass */,
+				3AFD06F81C735A6B00549C48 /* Controller */,
+				3A7D86BC1C6F69E200BCF7E7 /* Utility */,
+				3A7D86BF1C6F6BC400BCF7E7 /* customView */,
+				3A7D86A81C6F522900BCF7E7 /* Library */,
 				3A7D86791C6F3F4800BCF7E7 /* LIveNutriFit */,
 				3A7D868E1C6F3F4800BCF7E7 /* LIveNutriFitTests */,
 				3A7D86991C6F3F4800BCF7E7 /* LIveNutriFitUITests */,
 				3A7D86781C6F3F4800BCF7E7 /* Products */,
+				83F8335D7C78316327E9DB1F /* Pods */,
+				95D2CAE4C066C8B1EE584DE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +410,8 @@
 		3A7D86791C6F3F4800BCF7E7 /* LIveNutriFit */ = {
 			isa = PBXGroup;
 			children = (
+				AFD116941CC0B9790033A074 /* Main.storyboard */,
 				3A7D867A1C6F3F4800BCF7E7 /* AppDelegate.swift */,
-				3A7D867C1C6F3F4800BCF7E7 /* ViewController.swift */,
-				3A7D867E1C6F3F4800BCF7E7 /* Main.storyboard */,
 				3A7D86811C6F3F4800BCF7E7 /* Assets.xcassets */,
 				3A7D86831C6F3F4800BCF7E7 /* LaunchScreen.storyboard */,
 				3A7D86861C6F3F4800BCF7E7 /* Info.plist */,
@@ -125,6 +437,524 @@
 			path = LIveNutriFitUITests;
 			sourceTree = "<group>";
 		};
+		3A7D86A81C6F522900BCF7E7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AF1CB61A1CD46C47008DF1C5 /* Tab Bar */,
+				AFE4FEB11CBA5F6900F0D527 /* DatePickerPopup */,
+				AF6B95D11CA3FFB3002D5AD6 /* IQKeyboardManagerSwift */,
+				AF6B95E71CA3FFB3002D5AD6 /* TextFieldValidator */,
+				3A7D86A91C6F522900BCF7E7 /* FloatLabelFields */,
+				3A7D86AF1C6F522900BCF7E7 /* Toast */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		3A7D86A91C6F522900BCF7E7 /* FloatLabelFields */ = {
+			isa = PBXGroup;
+			children = (
+				3A7D86B61C6F5DEA00BCF7E7 /* MKColor.swift */,
+				3A7D86B71C6F5DEA00BCF7E7 /* MKLayer.swift */,
+				3A7D86B81C6F5DEA00BCF7E7 /* MKTextField.swift */,
+			);
+			path = FloatLabelFields;
+			sourceTree = "<group>";
+		};
+		3A7D86AF1C6F522900BCF7E7 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				3A7D86B01C6F522900BCF7E7 /* HRToast+UIView.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		3A7D86BC1C6F69E200BCF7E7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B96021CA47910002D5AD6 /* ConnectionClass.swift */,
+				3A7D86BD1C6F69F700BCF7E7 /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3A7D86BF1C6F6BC400BCF7E7 /* customView */ = {
+			isa = PBXGroup;
+			children = (
+				AF72ADB51CD00B8300C3F47A /* Document Selection */,
+				AF16F5191CC4295E00EF3430 /* CustomSliderView.swift */,
+				3A7D86C21C6F6C7D00BCF7E7 /* LoginButtonView.swift */,
+				3A7D86C41C6F6C9000BCF7E7 /* LoginButtonView.xib */,
+				AFDE3F601CF0512A009C1180 /* TimeSelectionViewController.swift */,
+			);
+			path = customView;
+			sourceTree = "<group>";
+		};
+		3AFD06F81C735A6B00549C48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF5D60A61CDB1EAE00F823A7 /* TabBarClasses */,
+				AFD116971CC0C2FE0033A074 /* Pagging */,
+				AF6B96041CA47B3A002D5AD6 /* Menu Bar  */,
+				3AFD06F91C735A6B00549C48 /* FirstMainView.swift */,
+				3AFD06FB1C735AD100549C48 /* RegisterViewController.swift */,
+				3ACA80B81C76312000E46546 /* LogInFirstViewController.swift */,
+				3A664B821C7E1F7A00BFB855 /* GenerateOtpViewController.swift */,
+				AF55E88C1CA52607001636B0 /* HavePasswordViewController.swift */,
+				AFE4FEA51CB9A87100F0D527 /* PersonalDetailViewController.swift */,
+				AF16F54A1CCD08E700EF3430 /* ThankYouViewController.swift */,
+				AF1CB6151CD333FF008DF1C5 /* TwoStepAwayViewController.swift */,
+				AF1CB6181CD400D7008DF1C5 /* CoachDetailsViewController.swift */,
+				AF1CB61D1CD46FE7008DF1C5 /* CoachModelViewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AFD06FD1C73678A00549C48 /* Extensionclass */ = {
+			isa = PBXGroup;
+			children = (
+				3AFD06FE1C7367A900549C48 /* ColorExtension.swift */,
+				AFDE3F641CF1C440009C1180 /* StringToFloat.swift */,
+				AFDE3F661CF1D40A009C1180 /* ConverInJson.swift */,
+			);
+			path = Extensionclass;
+			sourceTree = "<group>";
+		};
+		83F8335D7C78316327E9DB1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A11E72C43BA360E6061E5E3 /* Pods.debug.xcconfig */,
+				494A82330D5A5D95674897D5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95D2CAE4C066C8B1EE584DE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBBA97D92C7B71E3AC2CACEC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF16F51B1CC5F45A00EF3430 /* personal 3 */ = {
+			isa = PBXGroup;
+			children = (
+				AF16F51C1CC5F4D000EF3430 /* WeightToReduceTableViewCell.swift */,
+				AF16F51E1CC5F4F600EF3430 /* WeightLossJourneyTableViewCell.swift */,
+				AF16F5201CC5F50E00EF3430 /* TargetMonthTableViewCell.swift */,
+				AF16F5221CC61B7A00EF3430 /* DescriptionTableViewCell.swift */,
+				AF1CB6131CD0A49B008DF1C5 /* NumberOfMonthTableViewCell.swift */,
+			);
+			name = "personal 3";
+			sourceTree = "<group>";
+		};
+		AF16F52E1CC96BF300EF3430 /* life style cell */ = {
+			isa = PBXGroup;
+			children = (
+				AFE4FEC21CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift */,
+				AFE4FEBE1CBB87D100F0D527 /* lifeStyleFiveButtonTableViewCell.swift */,
+				AF16F52F1CC96C3C00EF3430 /* lifeStyle3btnSingleSeltTableViewCell.swift */,
+			);
+			name = "life style cell";
+			sourceTree = "<group>";
+		};
+		AF16F5311CC9876C00EF3430 /* lifeStyle 2 */ = {
+			isa = PBXGroup;
+			children = (
+				AF16F5321CC987A800EF3430 /* lifestyleDayTableViewCell.swift */,
+				AF16F5341CCAC96400EF3430 /* DailySleepHoursTableViewCell.swift */,
+			);
+			name = "lifeStyle 2";
+			sourceTree = "<group>";
+		};
+		AF16F5361CCC080600EF3430 /* lifeStyle 3 */ = {
+			isa = PBXGroup;
+			children = (
+				AF16F5371CCC082B00EF3430 /* HeaderTableViewCell.swift */,
+				AF16F53A1CCC085300EF3430 /* HeaderWithSwitchTableViewCell.swift */,
+				AF16F53C1CCC086600EF3430 /* DropDownTableViewCell.swift */,
+				AF16F53E1CCC087C00EF3430 /* DrinkPickerTableViewCell.swift */,
+			);
+			name = "lifeStyle 3";
+			sourceTree = "<group>";
+		};
+		AF16F5401CCCB81C00EF3430 /* personal 1 */ = {
+			isa = PBXGroup;
+			children = (
+				AFE4FEB41CBA627600F0D527 /* PersonalGenderTableViewCell.swift */,
+				AFE4FEB61CBA84D000F0D527 /* PersonalDobTableViewCell.swift */,
+			);
+			name = "personal 1";
+			sourceTree = "<group>";
+		};
+		AF16F5411CCCB82C00EF3430 /* personal 2 */ = {
+			isa = PBXGroup;
+			children = (
+				AFD116851CBE198F0033A074 /* WeightTypeSelectionTableViewCell.swift */,
+				AFD116901CBF81650033A074 /* WeightPrefrenceTableViewCell.swift */,
+				AF16F50A1CC1A20A00EF3430 /* WeightPickerTableViewCell.swift */,
+				AF16F50C1CC35A7E00EF3430 /* HeightTypeSelectionTableViewCell.swift */,
+				AF16F50E1CC3A0CB00EF3430 /* heightPickerTableViewCell.swift */,
+				AF16F5171CC4288100EF3430 /* sliderTableViewCell.swift */,
+			);
+			name = "personal 2";
+			sourceTree = "<group>";
+		};
+		AF16F5421CCCB83E00EF3430 /* medical 1 */ = {
+			isa = PBXGroup;
+			children = (
+				AFE4FEB81CBAD5F900F0D527 /* MedicalCellTableViewCell.swift */,
+				AFE4FEBA1CBAEE1300F0D527 /* MedicalBaseTableViewCell.swift */,
+			);
+			name = "medical 1";
+			sourceTree = "<group>";
+		};
+		AF16F5431CCCDA4B00EF3430 /* Medical 2 */ = {
+			isa = PBXGroup;
+			children = (
+				AF16F5441CCCDA8500EF3430 /* EightbuttonTableViewCell.swift */,
+				AF16F5461CCCE70300EF3430 /* medicalWithSawitchTableViewCell.swift */,
+				AF16F5481CCCEA7800EF3430 /* DocumentTableViewCell.swift */,
+			);
+			name = "Medical 2";
+			sourceTree = "<group>";
+		};
+		AF1CB61A1CD46C47008DF1C5 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				AF1CB61B1CD46C47008DF1C5 /* CAPSPageMenu.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		AF28C1691CE74AD3006F1EFD /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				AF28C16A1CE74AFD006F1EFD /* MenuCollectionViewCell.swift */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		AF324B981CDD38CF0043F854 /* PowerOf7 */ = {
+			isa = PBXGroup;
+			children = (
+				AF324B991CDD39630043F854 /* Power7SleepViewController.swift */,
+				AF324B9B1CDD398C0043F854 /* Power7WaterViewController.swift */,
+				AF324B9D1CDD39BF0043F854 /* Power7ProtienViewController.swift */,
+				AF324B9F1CDD39DC0043F854 /* Power7VeggisViewController.swift */,
+				AF324BA11CDD3A050043F854 /* Power7FruitsViewController.swift */,
+				AF324BA31CDD3A1A0043F854 /* Power7NutsViewController.swift */,
+				AF324BA51CDD3A390043F854 /* Power7ExerciseViewController.swift */,
+			);
+			path = PowerOf7;
+			sourceTree = "<group>";
+		};
+		AF55E89B1CA7A77F001636B0 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AFDE3F571CEEF7D9009C1180 /* ReminderCell */,
+				AF28C1691CE74AD3006F1EFD /* MenuView */,
+				AF5A04061CE449550081435D /* DashBordCustom cell */,
+				AF16F5431CCCDA4B00EF3430 /* Medical 2 */,
+				AF16F5361CCC080600EF3430 /* lifeStyle 3 */,
+				AF16F5311CC9876C00EF3430 /* lifeStyle 2 */,
+				AF16F51B1CC5F45A00EF3430 /* personal 3 */,
+				AF16F5401CCCB81C00EF3430 /* personal 1 */,
+				AF16F5421CCCB83E00EF3430 /* medical 1 */,
+				AF16F52E1CC96BF300EF3430 /* life style cell */,
+				AF16F5411CCCB82C00EF3430 /* personal 2 */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		AF55E89D1CA7A77F001636B0 /* ModelClass */ = {
+			isa = PBXGroup;
+			children = (
+				AF55E89E1CA7A77F001636B0 /* loginData.swift */,
+				AFE4FEBC1CBAF87900F0D527 /* MedicalDetailObject.swift */,
+				AF1CB6211CD55FA8008DF1C5 /* CoachDetail.swift */,
+				AFDE3F5C1CEFB6B3009C1180 /* ReminderData.swift */,
+			);
+			path = ModelClass;
+			sourceTree = "<group>";
+		};
+		AF55E89F1CA7A77F001636B0 /* Shared Class */ = {
+			isa = PBXGroup;
+			children = (
+				AF28C1F41CEA5CE5006F1EFD /* demo.swift */,
+				AFE4FE9F1CB78DAF00F0D527 /* BaseViewController.swift */,
+				AF55E8A01CA7A77F001636B0 /* LiveNutriFitApi.swift */,
+				AF55E8A11CA7A77F001636B0 /* ParserApi.swift */,
+				AF28C16C1CE79BF5006F1EFD /* ButtonColor.swift */,
+			);
+			path = "Shared Class";
+			sourceTree = "<group>";
+		};
+		AF5A04061CE449550081435D /* DashBordCustom cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF28C3921CEA736B006F1EFD /* WeightLossExtraLblTableViewCell.swift */,
+				AF5A04071CE4497E0081435D /* BMIStatusTableViewCell.swift */,
+				AF5A04091CE466B30081435D /* DashBoardPower7TableViewCell.swift */,
+				AF28C16E1CE84894006F1EFD /* CoachTableViewCell.swift */,
+				AF28C1701CE848C8006F1EFD /* CoachSliderTableViewCell.swift */,
+				AF28C1721CE8E4E2006F1EFD /* WeightLossHeaderTableViewCell.swift */,
+				AF28C1741CE8E4F6006F1EFD /* WeightLossTableViewCell.swift */,
+			);
+			path = "DashBordCustom cell";
+			sourceTree = "<group>";
+		};
+		AF5D60A61CDB1EAE00F823A7 /* TabBarClasses */ = {
+			isa = PBXGroup;
+			children = (
+				AF5D60A71CDB1EAE00F823A7 /* DashboardViewController.swift */,
+				AF5D60A81CDB1EAE00F823A7 /* MyCoachViewController.swift */,
+				AF5D60A91CDB1EAE00F823A7 /* PowerOf7ViewController.swift */,
+				AF324B981CDD38CF0043F854 /* PowerOf7 */,
+				AF5D60AA1CDB1EAE00F823A7 /* ProgressViewController.swift */,
+				AF5D60AB1CDB1EAE00F823A7 /* QuitViewController.swift */,
+				AFDE3F551CEE7348009C1180 /* ReminderViewController.swift */,
+				AFDE3F5A1CEF0105009C1180 /* ReminderModificationViewController.swift */,
+			);
+			path = TabBarClasses;
+			sourceTree = "<group>";
+		};
+		AF6B95D11CA3FFB3002D5AD6 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B95D21CA3FFB3002D5AD6 /* Categories */,
+				AF6B95D91CA3FFB3002D5AD6 /* Constants */,
+				AF6B95DC1CA3FFB3002D5AD6 /* IQKeyboardManager.swift */,
+				AF6B95DD1CA3FFB3002D5AD6 /* IQKeyboardReturnKeyHandler.swift */,
+				AF6B95DE1CA3FFB3002D5AD6 /* IQTextView */,
+				AF6B95E01CA3FFB3002D5AD6 /* IQToolbar */,
+				AF6B95E51CA3FFB3002D5AD6 /* Resources */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		AF6B95D21CA3FFB3002D5AD6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B95D31CA3FFB3002D5AD6 /* IQNSArray+Sort.swift */,
+				AF6B95D41CA3FFB3002D5AD6 /* IQUIScrollView+Additions.swift */,
+				AF6B95D51CA3FFB3002D5AD6 /* IQUITextFieldView+Additions.swift */,
+				AF6B95D61CA3FFB3002D5AD6 /* IQUIView+Hierarchy.swift */,
+				AF6B95D71CA3FFB3002D5AD6 /* IQUIViewController+Additions.swift */,
+				AF6B95D81CA3FFB3002D5AD6 /* IQUIWindow+Hierarchy.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		AF6B95D91CA3FFB3002D5AD6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B95DA1CA3FFB3002D5AD6 /* IQKeyboardManagerConstants.swift */,
+				AF6B95DB1CA3FFB3002D5AD6 /* IQKeyboardManagerConstantsInternal.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AF6B95DE1CA3FFB3002D5AD6 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B95DF1CA3FFB3002D5AD6 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		AF6B95E01CA3FFB3002D5AD6 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B95E11CA3FFB3002D5AD6 /* IQBarButtonItem.swift */,
+				AF6B95E21CA3FFB3002D5AD6 /* IQTitleBarButtonItem.swift */,
+				AF6B95E31CA3FFB3002D5AD6 /* IQToolbar.swift */,
+				AF6B95E41CA3FFB3002D5AD6 /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		AF6B95E51CA3FFB3002D5AD6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B95E61CA3FFB3002D5AD6 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF6B95E71CA3FFB3002D5AD6 /* TextFieldValidator */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B95E81CA3FFB3002D5AD6 /* error@2x.png */,
+				AF6B95E91CA3FFB3002D5AD6 /* TextFieldValidator.h */,
+				AF6B95EA1CA3FFB3002D5AD6 /* TextFieldValidator.m */,
+			);
+			path = TextFieldValidator;
+			sourceTree = "<group>";
+		};
+		AF6B96041CA47B3A002D5AD6 /* Menu Bar  */ = {
+			isa = PBXGroup;
+			children = (
+				AFE4FEA31CB9812500F0D527 /* MenuViewController.swift */,
+			);
+			name = "Menu Bar ";
+			sourceTree = "<group>";
+		};
+		AF72ADB51CD00B8300C3F47A /* Document Selection */ = {
+			isa = PBXGroup;
+			children = (
+				AF72ADB81CD00BD600C3F47A /* DocumentSelectionPopUpViewController.swift */,
+			);
+			path = "Document Selection";
+			sourceTree = "<group>";
+		};
+		AF9077501CE510040093F87B /* PayU */ = {
+			isa = PBXGroup;
+			children = (
+				B20B76A91CEE4DA800B985A7 /* Connection&Utility */,
+				B20B76A81CEE4D9600B985A7 /* Controllers */,
+				B20B76A71CEE4D7E00B985A7 /* Modals */,
+				B20B76A61CEE4D5F00B985A7 /* Views */,
+			);
+			path = PayU;
+			sourceTree = "<group>";
+		};
+		AFD116971CC0C2FE0033A074 /* Pagging */ = {
+			isa = PBXGroup;
+			children = (
+				AFD116981CC0C2FE0033A074 /* lifeStyleSubView */,
+				AFD116991CC0C2FE0033A074 /* LifeStyleViewController.swift */,
+				AFD1169A1CC0C2FE0033A074 /* MedicalSubview */,
+				AFD1169B1CC0C2FE0033A074 /* MedicalViewController.swift */,
+				AFD1169C1CC0C2FE0033A074 /* personalSubView */,
+				AFD1169E1CC0C2FE0033A074 /* PersonalViewController.swift */,
+			);
+			path = Pagging;
+			sourceTree = "<group>";
+		};
+		AFD116981CC0C2FE0033A074 /* lifeStyleSubView */ = {
+			isa = PBXGroup;
+			children = (
+				AF16F5281CC8242300EF3430 /* LifeStyle2ViewController.swift */,
+				AF16F52C1CC8A75200EF3430 /* LifeStyle3ViewController.swift */,
+			);
+			path = lifeStyleSubView;
+			sourceTree = "<group>";
+		};
+		AFD1169A1CC0C2FE0033A074 /* MedicalSubview */ = {
+			isa = PBXGroup;
+			children = (
+				AF16F5241CC823E100EF3430 /* Medical2ViewController.swift */,
+			);
+			path = MedicalSubview;
+			sourceTree = "<group>";
+		};
+		AFD1169C1CC0C2FE0033A074 /* personalSubView */ = {
+			isa = PBXGroup;
+			children = (
+				AFD1169D1CC0C2FE0033A074 /* Personal2ViewController.swift */,
+				AFD116A31CC0C3BA0033A074 /* PersonalThirdViewController.swift */,
+			);
+			path = personalSubView;
+			sourceTree = "<group>";
+		};
+		AFDE3F571CEEF7D9009C1180 /* ReminderCell */ = {
+			isa = PBXGroup;
+			children = (
+				AFDE3F581CEEF7F3009C1180 /* CustomHeaderCell.swift */,
+			);
+			path = ReminderCell;
+			sourceTree = "<group>";
+		};
+		AFE4FEB11CBA5F6900F0D527 /* DatePickerPopup */ = {
+			isa = PBXGroup;
+			children = (
+				AFE4FEB21CBA5F6900F0D527 /* DatePickerDialog.swift */,
+			);
+			path = DatePickerPopup;
+			sourceTree = "<group>";
+		};
+		B20B76981CEE4C9100B985A7 /* LNSetting */ = {
+			isa = PBXGroup;
+			children = (
+				B29EAE5B1CF39BEC0022727A /* index.html */,
+				B20B76991CEE4CA200B985A7 /* LNSettingViewController.h */,
+				B20B769A1CEE4CA200B985A7 /* LNSettingViewController.m */,
+				B2D652391CF389300090389F /* LNChangePasswordViewController.h */,
+				B2D6523A1CF389300090389F /* LNChangePasswordViewController.m */,
+			);
+			name = LNSetting;
+			sourceTree = "<group>";
+		};
+		B20B76A61CEE4D5F00B985A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2D652311CF3876E0090389F /* MainPayU.storyboard */,
+				AF90775B1CE510040093F87B /* LNPlanCellTableViewCell.h */,
+				AF90775C1CE510040093F87B /* LNPlanCellTableViewCell.m */,
+				AF90775D1CE510040093F87B /* LNPlanCellTableViewCell.xib */,
+				B20B76A11CEE4D5600B985A7 /* LNPlanPriceTableViewCell.h */,
+				B20B76A21CEE4D5600B985A7 /* LNPlanPriceTableViewCell.m */,
+				B20B76A31CEE4D5600B985A7 /* LNPlanPriceTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B20B76A71CEE4D7E00B985A7 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				AF9077551CE510040093F87B /* LNDietician.h */,
+				AF9077561CE510040093F87B /* LNDietician.m */,
+				AF9077571CE510040093F87B /* LNPackageFeature.h */,
+				AF9077581CE510040093F87B /* LNPackageFeature.m */,
+				AF9077591CE510040093F87B /* LNPlan.h */,
+				AF90775A1CE510040093F87B /* LNPlan.m */,
+				AF90775E1CE510040093F87B /* LNPlanFeature.h */,
+				AF90775F1CE510040093F87B /* LNPlanFeature.m */,
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
+		B20B76A81CEE4D9600B985A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2D6523E1CF38CF20090389F /* LNPlanPriceViewController.h */,
+				B2D6523F1CF38CF20090389F /* LNPlanPriceViewController.m */,
+				B2D652411CF38EFA0090389F /* LNChoosePlanViewController.h */,
+				B2D652421CF38EFA0090389F /* LNChoosePlanViewController.m */,
+				B2D652361CF388F40090389F /* LNBaseViewController.h */,
+				B2D652371CF388F40090389F /* LNBaseViewController.m */,
+				AF9077531CE510040093F87B /* LNCoachListViewController.h */,
+				AF9077541CE510040093F87B /* LNCoachListViewController.m */,
+				AF9077601CE510040093F87B /* LNPlanViewController.h */,
+				AF9077611CE510040093F87B /* LNPlanViewController.m */,
+				AF9077641CE510040093F87B /* PageContentViewController.h */,
+				AF9077651CE510050093F87B /* PageContentViewController.m */,
+				AF90776A1CE510050093F87B /* ViewController.h */,
+				AF90776B1CE510050093F87B /* ViewController.m */,
+				B2D652251CF3872E0090389F /* LNHowitWorkViewController.h */,
+				B2D652261CF3872E0090389F /* LNHowitWorkViewController.m */,
+				B2D652271CF3872E0090389F /* LNFreeFoodsViewController.h */,
+				B2D652281CF3872E0090389F /* LNFreeFoodsViewController.m */,
+				B2D652291CF3872E0090389F /* LNAboutViewController.h */,
+				B2D6522A1CF3872E0090389F /* LNAboutViewController.m */,
+				B2D6522B1CF3872E0090389F /* LNHowWorkViewController.h */,
+				B2D6522C1CF3872E0090389F /* LNHowWorkViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B20B76A91CEE4DA800B985A7 /* Connection&Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AF9077661CE510050093F87B /* TRWebServiceManger.h */,
+				AF9077671CE510050093F87B /* TRWebServiceManger.m */,
+				AF9077681CE510050093F87B /* Utiity.h */,
+				AF9077691CE510050093F87B /* Utiity.m */,
+			);
+			name = "Connection&Utility";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +962,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A7D869F1C6F3F4800BCF7E7 /* Build configuration list for PBXNativeTarget "LIveNutriFit" */;
 			buildPhases = (
+				06BE2C1B574817CC5F5F44EA /* Check Pods Manifest.lock */,
 				3A7D86731C6F3F4800BCF7E7 /* Sources */,
 				3A7D86741C6F3F4800BCF7E7 /* Frameworks */,
 				3A7D86751C6F3F4800BCF7E7 /* Resources */,
+				8D3C49813F67F07E6BB0975B /* Embed Pods Frameworks */,
+				9E83A443B5A09F4612427FB4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +1026,7 @@
 				TargetAttributes = {
 					3A7D86761C6F3F4800BCF7E7 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = JPPU993W5Z;
 					};
 					3A7D868A1C6F3F4800BCF7E7 = {
 						CreatedOnToolsVersion = 7.1;
@@ -229,9 +1063,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9077721CE510050093F87B /* LNPlanCellTableViewCell.xib in Resources */,
+				B20B76A51CEE4D5600B985A7 /* LNPlanPriceTableViewCell.xib in Resources */,
+				AF6B95FA1CA3FFB3002D5AD6 /* IQKeyboardManager.bundle in Resources */,
+				3A7D86C51C6F6C9000BCF7E7 /* LoginButtonView.xib in Resources */,
 				3A7D86851C6F3F4800BCF7E7 /* LaunchScreen.storyboard in Resources */,
+				B29EAE5C1CF39BEC0022727A /* index.html in Resources */,
+				B2D652321CF3876E0090389F /* MainPayU.storyboard in Resources */,
+				AFD116961CC0B9790033A074 /* Main.storyboard in Resources */,
+				AF6B95FB1CA3FFB3002D5AD6 /* error@2x.png in Resources */,
 				3A7D86821C6F3F4800BCF7E7 /* Assets.xcassets in Resources */,
-				3A7D86801C6F3F4800BCF7E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +1092,190 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06BE2C1B574817CC5F5F44EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D3C49813F67F07E6BB0975B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E83A443B5A09F4612427FB4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A7D86731C6F3F4800BCF7E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A7D867D1C6F3F4800BCF7E7 /* ViewController.swift in Sources */,
+				AF6B95EE1CA3FFB3002D5AD6 /* IQUIView+Hierarchy.swift in Sources */,
+				3AFD06FC1C735AD100549C48 /* RegisterViewController.swift in Sources */,
+				AF9077771CE510050093F87B /* PageContentViewController.m in Sources */,
+				AF6B95FC1CA3FFB3002D5AD6 /* TextFieldValidator.m in Sources */,
+				B2D652301CF3872E0090389F /* LNHowWorkViewController.m in Sources */,
+				AFE4FEB51CBA627600F0D527 /* PersonalGenderTableViewCell.swift in Sources */,
+				AF16F5181CC4288100EF3430 /* sliderTableViewCell.swift in Sources */,
+				AFDE3F5B1CEF0105009C1180 /* ReminderModificationViewController.swift in Sources */,
+				AFDE3F671CF1D40A009C1180 /* ConverInJson.swift in Sources */,
+				AFE4FEBD1CBAF87900F0D527 /* MedicalDetailObject.swift in Sources */,
+				AF324BA21CDD3A050043F854 /* Power7FruitsViewController.swift in Sources */,
+				AF6B95F41CA3FFB3002D5AD6 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				AF9077701CE510050093F87B /* LNPlan.m in Sources */,
+				B2D6522E1CF3872E0090389F /* LNFreeFoodsViewController.m in Sources */,
+				AF9077791CE510050093F87B /* Utiity.m in Sources */,
+				AF28C1731CE8E4E2006F1EFD /* WeightLossHeaderTableViewCell.swift in Sources */,
+				AFE4FEBB1CBAEE1300F0D527 /* MedicalBaseTableViewCell.swift in Sources */,
+				B2D652381CF388F40090389F /* LNBaseViewController.m in Sources */,
+				AF1CB61E1CD46FE7008DF1C5 /* CoachModelViewViewController.swift in Sources */,
+				AF28C1F51CEA5CE5006F1EFD /* demo.swift in Sources */,
+				3A7D86C31C6F6C7D00BCF7E7 /* LoginButtonView.swift in Sources */,
+				AF16F54B1CCD08E700EF3430 /* ThankYouViewController.swift in Sources */,
+				AF16F5451CCCDA8500EF3430 /* EightbuttonTableViewCell.swift in Sources */,
+				AF6B95F01CA3FFB3002D5AD6 /* IQUIWindow+Hierarchy.swift in Sources */,
+				AFDE3F611CF0512A009C1180 /* TimeSelectionViewController.swift in Sources */,
+				AFE4FEA41CB9812500F0D527 /* MenuViewController.swift in Sources */,
+				AFE4FEB71CBA84D000F0D527 /* PersonalDobTableViewCell.swift in Sources */,
+				AF16F5301CC96C3C00EF3430 /* lifeStyle3btnSingleSeltTableViewCell.swift in Sources */,
+				AFD116A01CC0C2FE0033A074 /* MedicalViewController.swift in Sources */,
+				AF9077741CE510050093F87B /* LNPlanViewController.m in Sources */,
+				AF16F51F1CC5F4F600EF3430 /* WeightLossJourneyTableViewCell.swift in Sources */,
+				AF55E88D1CA52607001636B0 /* HavePasswordViewController.swift in Sources */,
+				AF16F53D1CCC086600EF3430 /* DropDownTableViewCell.swift in Sources */,
+				3A7D86BE1C6F69F700BCF7E7 /* Constant.swift in Sources */,
+				3A7D86BA1C6F5DEA00BCF7E7 /* MKLayer.swift in Sources */,
+				AF1CB6141CD0A49B008DF1C5 /* NumberOfMonthTableViewCell.swift in Sources */,
+				AF1CB61C1CD46C47008DF1C5 /* CAPSPageMenu.swift in Sources */,
+				AF28C3931CEA736B006F1EFD /* WeightLossExtraLblTableViewCell.swift in Sources */,
+				AF16F5211CC5F50E00EF3430 /* TargetMonthTableViewCell.swift in Sources */,
+				AF1CB6161CD333FF008DF1C5 /* TwoStepAwayViewController.swift in Sources */,
+				AF1CB6191CD400D7008DF1C5 /* CoachDetailsViewController.swift in Sources */,
+				AFD116911CBF81650033A074 /* WeightPrefrenceTableViewCell.swift in Sources */,
+				AF9077781CE510050093F87B /* TRWebServiceManger.m in Sources */,
+				AF6B95F31CA3FFB3002D5AD6 /* IQKeyboardManager.swift in Sources */,
+				AF6B95EB1CA3FFB3002D5AD6 /* IQNSArray+Sort.swift in Sources */,
+				AF55E8A31CA7A77F001636B0 /* loginData.swift in Sources */,
+				AF5D60AF1CDB1EAE00F823A7 /* ProgressViewController.swift in Sources */,
+				AF1CB6221CD55FA8008DF1C5 /* CoachDetail.swift in Sources */,
+				AF324B9E1CDD39BF0043F854 /* Power7ProtienViewController.swift in Sources */,
+				AFDE3F591CEEF7F3009C1180 /* CustomHeaderCell.swift in Sources */,
+				AFD116A21CC0C2FE0033A074 /* PersonalViewController.swift in Sources */,
+				AF5A04081CE4497E0081435D /* BMIStatusTableViewCell.swift in Sources */,
+				AF28C16F1CE84894006F1EFD /* CoachTableViewCell.swift in Sources */,
+				AF16F5251CC823E100EF3430 /* Medical2ViewController.swift in Sources */,
+				AF6B95F91CA3FFB3002D5AD6 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				AF6B95ED1CA3FFB3002D5AD6 /* IQUITextFieldView+Additions.swift in Sources */,
+				AF16F53B1CCC085300EF3430 /* HeaderWithSwitchTableViewCell.swift in Sources */,
+				AFD116861CBE198F0033A074 /* WeightTypeSelectionTableViewCell.swift in Sources */,
+				AF324B9A1CDD39630043F854 /* Power7SleepViewController.swift in Sources */,
+				AF324BA41CDD3A1A0043F854 /* Power7NutsViewController.swift in Sources */,
+				AF6B95EF1CA3FFB3002D5AD6 /* IQUIViewController+Additions.swift in Sources */,
+				AF6B95F81CA3FFB3002D5AD6 /* IQToolbar.swift in Sources */,
+				AF5D60AC1CDB1EAE00F823A7 /* DashboardViewController.swift in Sources */,
+				AF6B95F51CA3FFB3002D5AD6 /* IQTextView.swift in Sources */,
+				AF9077731CE510050093F87B /* LNPlanFeature.m in Sources */,
+				B2D6522D1CF3872E0090389F /* LNHowitWorkViewController.m in Sources */,
+				AF55E8A41CA7A77F001636B0 /* LiveNutriFitApi.swift in Sources */,
+				AF6B95EC1CA3FFB3002D5AD6 /* IQUIScrollView+Additions.swift in Sources */,
+				AF6B96031CA47910002D5AD6 /* ConnectionClass.swift in Sources */,
+				AFDE3F5D1CEFB6B3009C1180 /* ReminderData.swift in Sources */,
+				AF28C16D1CE79BF5006F1EFD /* ButtonColor.swift in Sources */,
+				3A7D86BB1C6F5DEA00BCF7E7 /* MKTextField.swift in Sources */,
+				AF28C1751CE8E4F6006F1EFD /* WeightLossTableViewCell.swift in Sources */,
+				AFE4FEA01CB78DAF00F0D527 /* BaseViewController.swift in Sources */,
+				AFE4FEC31CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift in Sources */,
+				AF5D60AD1CDB1EAE00F823A7 /* MyCoachViewController.swift in Sources */,
+				B20B76A41CEE4D5600B985A7 /* LNPlanPriceTableViewCell.m in Sources */,
 				3A7D867B1C6F3F4800BCF7E7 /* AppDelegate.swift in Sources */,
+				AF90776F1CE510050093F87B /* LNPackageFeature.m in Sources */,
+				AF28C1711CE848C8006F1EFD /* CoachSliderTableViewCell.swift in Sources */,
+				3ACA80B91C76312000E46546 /* LogInFirstViewController.swift in Sources */,
+				AF6B95F11CA3FFB3002D5AD6 /* IQKeyboardManagerConstants.swift in Sources */,
+				AF5D60B01CDB1EAE00F823A7 /* QuitViewController.swift in Sources */,
+				AFE4FEB91CBAD5F900F0D527 /* MedicalCellTableViewCell.swift in Sources */,
+				AF5A040A1CE466B30081435D /* DashBoardPower7TableViewCell.swift in Sources */,
+				3A7D86B91C6F5DEA00BCF7E7 /* MKColor.swift in Sources */,
+				AF5D60AE1CDB1EAE00F823A7 /* PowerOf7ViewController.swift in Sources */,
+				AFE4FEA61CB9A87100F0D527 /* PersonalDetailViewController.swift in Sources */,
+				AF6B95F61CA3FFB3002D5AD6 /* IQBarButtonItem.swift in Sources */,
+				AF72ADB91CD00BD600C3F47A /* DocumentSelectionPopUpViewController.swift in Sources */,
+				AF6B95F21CA3FFB3002D5AD6 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				AF324BA61CDD3A390043F854 /* Power7ExerciseViewController.swift in Sources */,
+				B2D652401CF38CF20090389F /* LNPlanPriceViewController.m in Sources */,
+				AF16F50B1CC1A20A00EF3430 /* WeightPickerTableViewCell.swift in Sources */,
+				AFE4FEB31CBA5F6900F0D527 /* DatePickerDialog.swift in Sources */,
+				AFDE3F651CF1C440009C1180 /* StringToFloat.swift in Sources */,
+				AF16F5381CCC082B00EF3430 /* HeaderTableViewCell.swift in Sources */,
+				AF90776D1CE510050093F87B /* LNCoachListViewController.m in Sources */,
+				AF16F53F1CCC087C00EF3430 /* DrinkPickerTableViewCell.swift in Sources */,
+				AFD1169F1CC0C2FE0033A074 /* LifeStyleViewController.swift in Sources */,
+				AF55E8A51CA7A77F001636B0 /* ParserApi.swift in Sources */,
+				AFDE3F561CEE7348009C1180 /* ReminderViewController.swift in Sources */,
+				AF28C16B1CE74AFD006F1EFD /* MenuCollectionViewCell.swift in Sources */,
+				B20B769D1CEE4CA200B985A7 /* LNSettingViewController.m in Sources */,
+				AF16F5351CCAC96400EF3430 /* DailySleepHoursTableViewCell.swift in Sources */,
+				AF16F5491CCCEA7800EF3430 /* DocumentTableViewCell.swift in Sources */,
+				AF16F5471CCCE70300EF3430 /* medicalWithSawitchTableViewCell.swift in Sources */,
+				AF16F50D1CC35A7F00EF3430 /* HeightTypeSelectionTableViewCell.swift in Sources */,
+				AF90776E1CE510050093F87B /* LNDietician.m in Sources */,
+				3AFD06FA1C735A6B00549C48 /* FirstMainView.swift in Sources */,
+				AF90777A1CE510050093F87B /* ViewController.m in Sources */,
+				AF16F51D1CC5F4D000EF3430 /* WeightToReduceTableViewCell.swift in Sources */,
+				AFE4FEBF1CBB87D200F0D527 /* lifeStyleFiveButtonTableViewCell.swift in Sources */,
+				B2D6522F1CF3872E0090389F /* LNAboutViewController.m in Sources */,
+				AFD116A41CC0C3BA0033A074 /* PersonalThirdViewController.swift in Sources */,
+				AF16F51A1CC4295E00EF3430 /* CustomSliderView.swift in Sources */,
+				B2D6523B1CF389300090389F /* LNChangePasswordViewController.m in Sources */,
+				AF16F50F1CC3A0CB00EF3430 /* heightPickerTableViewCell.swift in Sources */,
+				3A7D86B51C6F522900BCF7E7 /* HRToast+UIView.swift in Sources */,
+				AF324BA01CDD39DC0043F854 /* Power7VeggisViewController.swift in Sources */,
+				3A664B831C7E1F7A00BFB855 /* GenerateOtpViewController.swift in Sources */,
+				AF324B9C1CDD398C0043F854 /* Power7WaterViewController.swift in Sources */,
+				AF9077711CE510050093F87B /* LNPlanCellTableViewCell.m in Sources */,
+				B2D652431CF38EFA0090389F /* LNChoosePlanViewController.m in Sources */,
+				AF16F5291CC8242300EF3430 /* LifeStyle2ViewController.swift in Sources */,
+				3AFD06FF1C7367A900549C48 /* ColorExtension.swift in Sources */,
+				AF16F52D1CC8A75200EF3430 /* LifeStyle3ViewController.swift in Sources */,
+				AF6B95F71CA3FFB3002D5AD6 /* IQTitleBarButtonItem.swift in Sources */,
+				AF16F5231CC61B7A00EF3430 /* DescriptionTableViewCell.swift in Sources */,
+				AF16F5331CC987A800EF3430 /* lifestyleDayTableViewCell.swift in Sources */,
+				AFD116A11CC0C2FE0033A074 /* Personal2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,20 +1311,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3A7D867E1C6F3F4800BCF7E7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A7D867F1C6F3F4800BCF7E7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3A7D86831C6F3F4800BCF7E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3A7D86841C6F3F4800BCF7E7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AFD116941CC0B9790033A074 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFD116951CC0B9790033A074 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -395,23 +1413,45 @@
 		};
 		3A7D86A01C6F3F4800BCF7E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A11E72C43BA360E6061E5E3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LIveNutriFit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ChaudharyTech.LIveNutriFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LIveNutriFit-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 			};
 			name = Debug;
 		};
 		3A7D86A11C6F3F4800BCF7E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 494A82330D5A5D95674897D5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LIveNutriFit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ChaudharyTech.LIveNutriFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LIveNutriFit-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 			};
 			name = Release;
 		};
@@ -482,6 +1522,7 @@
 				3A7D86A11C6F3F4800BCF7E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A7D86A21C6F3F4800BCF7E7 /* Build configuration list for PBXNativeTarget "LIveNutriFitTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +1531,7 @@
 				3A7D86A41C6F3F4800BCF7E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A7D86A51C6F3F4800BCF7E7 /* Build configuration list for PBXNativeTarget "LIveNutriFitUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +1540,7 @@
 				3A7D86A71C6F3F4800BCF7E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
