@@ -11,6 +11,8 @@ import UIKit
 class Power7NutsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet var btnEditedReminder: UIButton!
+    @IBOutlet weak var switchButton: UISwitch!
+    @IBOutlet weak var lblHeader: UILabel!
      private let reuseIdentifier = "collectionViewCell"
      var stageId:Int!
     override func viewDidLoad() {

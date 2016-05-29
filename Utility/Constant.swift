@@ -11,6 +11,8 @@ import UIKit
 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 // web service 
 let baseUrl = "http://52.24.100.222/LiveNutriFitWebService/patient.asmx/";
+// image download url
+let power7ImgBaseUrl = "http://www.livenutrifit.com/LiveNutriFitWebService/uploads/powerof7images/";
 
 // diffrent services extensions
 let kPatientLogin = "Patient_LoginV2"; // PatientLogin
@@ -19,6 +21,7 @@ let KPatient_RegisterV3 = "Patient_RegisterV3";
 let kDieticianDetailList = "Dietician_List";
 let kGetReminderList = "GetReminderList";// get reminder list
 let kManageRemindersV2 = "ManageRemindersV2";// ManageRemindersV2
+let kGetPowerOfSeven = "GetPowerOfSevenPointList";
 // uibutton title
 // screen Title
 let kTitle_Register = "REGISTER";
@@ -29,6 +32,9 @@ let kGenerateOtp = "GENERAT OTP";
 let kConfirmationCode = "LET’S GO";
 // registration screen
 let kCreateYourAccount = "CREATE YOUR ACCOUNT";
+// power of seven
+let editReminder = "Reminder\nEdit";
+let onlyReminder = "Reminder";
 
 // label constant text
 // login Screen Page

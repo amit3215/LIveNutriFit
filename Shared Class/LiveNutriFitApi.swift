@@ -20,9 +20,17 @@ class LiveNutriFitApi: NSObject {
     private var otp:Int!
     private var phoneNoValue:String!
     private var nameEnteredByuser:String!
-    
+    private var powerOfSevenData:[powerOfSeven]!
     var diseaseArray:[mediacalDetails]!
-    
+    // p[ower of seven data 
+    var power7Content: [powerOfSeven]{
+        get{
+            return powerOfSevenData
+        }
+        set(newValue){
+            powerOfSevenData = newValue as [powerOfSeven]
+        }
+    }
     
     // calculated property
     var loginData: LoginInfo{

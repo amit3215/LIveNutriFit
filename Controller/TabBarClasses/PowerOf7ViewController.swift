@@ -8,11 +8,13 @@
 
 import UIKit
 
-class PowerOf7ViewController: BaseViewController{
-    var btnSender: UIButton? = UIButton()
-    var currentViewController: UIViewController?
-    var subviewController:UIViewController?
-    @IBOutlet weak var viewPowerPagging: UIView!
+class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICollectionViewDataSource{
+    var power7Content: [powerOfSeven]!
+    var object:powerOfSeven!
+    var subObject:power7SubObject!
+    var subObjectArray:[power7SubObject]!
+    var currentStageId:Int!
+    
     
     enum TabIndex : Int {
         case Power7SleepVC = 0
@@ -31,47 +33,19 @@ class PowerOf7ViewController: BaseViewController{
     @IBOutlet weak var power7Fruits: UIButton!
     @IBOutlet weak var power7Veggis: UIButton!
     @IBOutlet weak var power7Protien: UIButton!
-    //Power7Sleep
-    lazy var Power7SleepVC: UIViewController? = {
-        let Power7SleepVC = self.storyboard?.instantiateViewControllerWithIdentifier("Power7Sleep")
-        return Power7SleepVC
-    }()
-     // Power7Water
-    lazy var Power7WaterVC: UIViewController? = {
-        let Power7WaterVC = self.storyboard?.instantiateViewControllerWithIdentifier("Power7Water")
-        return Power7WaterVC
-    }()
-    //Power7Nuts
-    lazy var Power7NutsVC: UIViewController? = {
-        let Power7NutsVC = self.storyboard?.instantiateViewControllerWithIdentifier("Power7Nuts")
-        return Power7NutsVC
-    }()
-    //Power7Exercise
-    lazy var Power7ExerciseVC : UIViewController? = {
-        let Power7ExerciseVC = self.storyboard?.instantiateViewControllerWithIdentifier("Power7Exercise")
-        return Power7ExerciseVC
-    }()
-   //Power7Fruits
-    lazy var Power7FruitsVC : UIViewController? = {
-        let Power7FruitsVC = self.storyboard?.instantiateViewControllerWithIdentifier("Power7Fruits")
-        return Power7FruitsVC
-    }()
-    //Power7Veggis
-    lazy var Power7VeggisVC : UIViewController? = {
-        let Power7VeggisVC = self.storyboard?.instantiateViewControllerWithIdentifier("Power7Veggis")
-        return Power7VeggisVC
-    }()
-   //Power7Protien
-    lazy var Power7ProtienVC : UIViewController? = {
-        let Power7ProtienVC = self.storyboard?.instantiateViewControllerWithIdentifier("Power7Protien")
-        return Power7ProtienVC
-    }()
-
-
+    // sleep
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var btnEditedReminder: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var switchButton: UISwitch!
+    @IBOutlet weak var lblHeader: UILabel!
+    @IBOutlet weak var baseInfoView: UIView!
+    @IBOutlet weak var lblInfoView: UILabel!
+    @IBOutlet weak var btnToShowInfo: UIButton!
+    var reuseIdentifier:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSender!.tag = 10
-        displayCurrentTab(TabIndex.Power7SleepVC.rawValue)
         // Do any additional setup after loading the view.
     }
 
@@ -85,139 +59,292 @@ class PowerOf7ViewController: BaseViewController{
         navigationBar?.barTintColor = kColor_navigationBar
         navigationBar?.tintColor = UIColor.whiteColor()
         navigationBar?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+         webServiceCallingTogetPowerOfSevenData()
          self.addSlideMenuButton()
     }
+    // update the view on the bases of selected  section
+    func loadTheViewOntheBasesOfObject(){
+        subObject = object.subobject[0]
+        if object.isReminder == 0{
+            switchButton.setOn(false, animated: true)
+            let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
+            reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
+            btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+        }else{
+            switchButton.setOn(true, animated: true)
+            btnEditedReminder.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            btnEditedReminder.titleLabel?.textAlignment = NSTextAlignment.Center
+            let reminder =  NSMutableAttributedString(string: editReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!,NSForegroundColorAttributeName:UIColor.blackColor()])
+            reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location:9,length:4))
+            reminder.addAttribute(NSFontAttributeName, value: UIFont(name:"HelveticaNeue-Medium", size: 12)!, range:NSRange(location:9,length:4) )
+            btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+        }
+        let url = NSURL(string:"\(power7ImgBaseUrl)\(subObject.imgName)" )
+        
+        let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
+        dispatch_async(dispatch_get_main_queue(), {
+            if data == nil{
+                 self.imageView.image = UIImage(named: "img1")
+            }else{
+            self.imageView.image = UIImage(data: data!)
+            } });
+        lblInfoView.sizeToFit()
+        lblInfoView.frame.size.height = CGFloat(MAXFLOAT)
+        lblInfoView.attributedText = convertText(object.info)
+        SwiftLoader.hide()
+        
+    }
+    func loadTheCollectionViewOntheBasesOfObject(){
+         subObjectArray = object.subobject
+        currentStageId = object.stageId as Int
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        if object.isReminder == 0{
+            switchButton.setOn(false, animated: true)
+            let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
+            reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
+            btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+        }else{
+            switchButton.setOn(true, animated: true)
+            btnEditedReminder.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            btnEditedReminder.titleLabel?.textAlignment = NSTextAlignment.Center
+            let reminder =  NSMutableAttributedString(string: editReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!,NSForegroundColorAttributeName:UIColor.blackColor()])
+            reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location:9,length:4))
+            reminder.addAttribute(NSFontAttributeName, value: UIFont(name:"HelveticaNeue-Medium", size: 12)!, range:NSRange(location:9,length:4) )
+            btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+        }
+        
+        lblInfoView.sizeToFit()
+        lblInfoView.frame.size.height = CGFloat(MAXFLOAT)
+        lblInfoView.attributedText = convertText(object.info)
+         dispatch_async(dispatch_get_main_queue(), {
+        self.collectionView.reloadData()
+         SwiftLoader.hide()
+        })
+    }
+
+
     
     @IBAction func onClickSleep(sender: AnyObject) {
-        self.currentViewController!.view.removeFromSuperview()
-        self.currentViewController!.removeFromParentViewController()
-        displayCurrentTab(0)
+       object = power7Content[0]
+       subObjectArray = object.subobject
+        collectionView.hidden = true
+        imageView.hidden = false
+         loadTheViewOntheBasesOfObject()
     }
     @IBAction func onClickWater(sender: AnyObject) {
-        self.currentViewController!.view.removeFromSuperview()
-        self.currentViewController!.removeFromParentViewController()
-        displayCurrentTab(1)
+        actionShowLoader()
+        SwiftLoader.show("Loading...", animated: true)
+        object = power7Content[1]
+        subObjectArray = object.subobject
+        collectionView.hidden = true
+         imageView.hidden = false
+         loadTheViewOntheBasesOfObject()
+       
     }
     @IBAction func onClickProtien(sender: AnyObject) {
-        self.currentViewController!.view.removeFromSuperview()
-        self.currentViewController!.removeFromParentViewController()
-        displayCurrentTab(6)
+        actionShowLoader()
+        SwiftLoader.show("Loading...", animated: true)
+        object = power7Content[2]
+        subObjectArray = object.subobject
+        reuseIdentifier = "2InRow"
+        collectionView.hidden = false
+         imageView.hidden = true
+         loadTheCollectionViewOntheBasesOfObject()
+        
         }
     @IBAction func onClickVeggies(sender: AnyObject) {
-        self.currentViewController!.view.removeFromSuperview()
-        self.currentViewController!.removeFromParentViewController()
-        displayCurrentTab(5)
+        actionShowLoader()
+        SwiftLoader.show("Loading...", animated: true)
+        object = power7Content[3]
+        subObjectArray = object.subobject
+         reuseIdentifier = "2InRow"
+        collectionView.hidden = false
+        imageView.hidden = true
+         loadTheCollectionViewOntheBasesOfObject()
+       
         }
     @IBAction func onClickFruits(sender: AnyObject) {
-        self.currentViewController!.view.removeFromSuperview()
-        self.currentViewController!.removeFromParentViewController()
-        displayCurrentTab(4)
+        actionShowLoader()
+        SwiftLoader.show("Loading...", animated: true)
+        object = power7Content[4]
+        subObjectArray = object.subobject
+         reuseIdentifier = "2InRow"
+        collectionView.hidden = false
+        imageView.hidden = true
+         loadTheCollectionViewOntheBasesOfObject()
+        
         }
     @IBAction func onClickNuts(sender: AnyObject) {
-        self.currentViewController!.view.removeFromSuperview()
-        self.currentViewController!.removeFromParentViewController()
-        displayCurrentTab(2)
+        actionShowLoader()
+        SwiftLoader.show("Loading...", animated: true)
+       
+        object = power7Content[5]
+        subObjectArray = object.subobject
+         reuseIdentifier = "SingleInRow"
+        collectionView.hidden = false
+        imageView.hidden = true
+         loadTheCollectionViewOntheBasesOfObject()
     }
     @IBAction func onClickExercise(sender: AnyObject) {
-        self.currentViewController!.view.removeFromSuperview()
-        self.currentViewController!.removeFromParentViewController()
-        displayCurrentTab(3)
+        actionShowLoader()
+        SwiftLoader.show("Loading...", animated: true)
+        object = power7Content[6]
+        subObjectArray = object.subobject
+         reuseIdentifier = "SingleInRow"
+        collectionView.hidden = false
+        imageView.hidden = true
+        loadTheCollectionViewOntheBasesOfObject()
     }
     
-    
-    // method to controll segemnent
-    func displayCurrentTab(tabIndex: Int){
-        if let vc = viewControllerForSelectedSegmentIndex(tabIndex) {
-            self.addChildViewController(vc)
-            vc.didMoveToParentViewController(self)
-            vc.view.frame = viewPowerPagging.bounds
-            self.viewPowerPagging.addSubview(vc.view)
-            self.currentViewController = vc
-            self.subviewController = vc
+    //   MARK:- calling Of web Services of power of seven
+    func webServiceCallingTogetPowerOfSevenData(){
+        actionShowLoader()
+        SwiftLoader.show("Loading...", animated: true)
+        var param = [String:AnyObject]()
+        param[kJsonKey_PatientId] = LiveNutriFitApi.sharedInstance.loginData.patientId
+        
+        PowerOfSevenWebServiceCalling(param, withjson: kGetPowerOfSeven)
+        
+    }
+    func PowerOfSevenWebServiceCalling(param:[String:AnyObject], withjson type:String) {
+        ConnectionClass.patientLoginServiceImplementation(param, withUrlString: type) { (data, error) -> Void in
+            if error != nil{
+                print(error?.description)
+            }else{
+                if data != nil{
+                    do {
+                        let result = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers)as! NSDictionary
+                        self.responceParsingforPowerOfSeven(result)
+                        print("Result -> \(result)")
+                    } catch {
+                        print("Error -> \(error)")
+                    }
+                }else{
+                    // network not connected
+                    
+                }
+            }
+        }
+        
+    }
+    // responce parser for update alarm data
+    func responceParsingforPowerOfSeven(result:NSDictionary)
+    {
+        if let dict = result["d"] as? String {
+            //    print(dict)
+            let jsonData = convertStringToDictionary(dict)
+            print(jsonData)
+            if let requestStatus = jsonData!["Status"] as? [String:AnyObject] {
+                if let status = requestStatus["Status"] as? Int{
+                    if status == 1{
+                        let powerOfSevenContent = jsonData!["PowerOfServenPointList"] as! [NSDictionary]
+                        print(powerOfSevenContent)
+                       
+                        let data = ParserApi.parsingPowerOfSevenData(powerOfSevenContent)
+                        print(data)
+                        power7Content = data
+                     //   LiveNutriFitApi.sharedInstance.power7Content = data
+                          dispatch_async(dispatch_get_main_queue(), {
+                        SwiftLoader.hide()
+                           self.object  = self.power7Content[0]
+                             self.loadTheViewOntheBasesOfObject()
+                        })
+
+                    }
+                }
+            }
         }
     }
-    
-    func viewControllerForSelectedSegmentIndex(index: Int) -> UIViewController? {
-        var vc: UIViewController?
-        switch index {
-        case TabIndex.Power7SleepVC.rawValue :
-            vc = Power7SleepVC
-            power7Sleep.highlighted = true
-            power7Water.highlighted = false
-            power7Nuts.highlighted = false
-            power7Exercise.highlighted = false
-            power7Fruits.highlighted = false
-            power7Veggis.highlighted = false
-            power7Protien.highlighted = false
-        case TabIndex.Power7WaterVC.rawValue :
-              vc = Power7WaterVC
-             power7Water.highlighted = true
-             power7Sleep.highlighted = false
-             power7Nuts.highlighted = false
-            power7Exercise.highlighted = false
-            power7Fruits.highlighted = false
-            power7Veggis.highlighted = false
-             power7Protien.highlighted = false
-        case TabIndex.Power7NutsVC.rawValue :
-            vc = Power7NutsVC
-            power7Nuts.highlighted = true
-             power7Sleep.highlighted = false
-             power7Water.highlighted = false
-            power7Exercise.highlighted = false
-            power7Fruits.highlighted = false
-            power7Veggis.highlighted = false
-             power7Protien.highlighted = false
-        case TabIndex.Power7ExerciseVC.rawValue :
-            vc = Power7ExerciseVC
-            power7Exercise.highlighted = true
-             power7Sleep.highlighted = false
-             power7Water.highlighted = false
-             power7Nuts.highlighted = false
-            power7Fruits.highlighted = false
-            power7Veggis.highlighted = false
-             power7Protien.highlighted = false
-        case TabIndex.Power7FruitsVC.rawValue :
-            vc = Power7FruitsVC
-            power7Fruits.highlighted = true
-             power7Sleep.highlighted = false
-             power7Water.highlighted = false
-             power7Nuts.highlighted = false
-            power7Exercise.highlighted = false
-            power7Veggis.highlighted = false
-             power7Protien.highlighted = false
-        case TabIndex.Power7VeggisVC.rawValue :
-            vc = Power7VeggisVC
-            power7Veggis.highlighted = true
-             power7Sleep.highlighted = false
-             power7Water.highlighted = false
-             power7Nuts.highlighted = false
-            power7Exercise.highlighted = false
-            power7Fruits.highlighted = false
-            power7Protien.highlighted = false
-        case TabIndex.Power7ProtienVC.rawValue :
-            vc = Power7ProtienVC
-             power7Protien.highlighted = true
-             power7Sleep.highlighted = false
-             power7Water.highlighted = false
-             power7Nuts.highlighted = false
-             power7Exercise.highlighted = false
-             power7Fruits.highlighted = false
-             power7Veggis.highlighted = false
-        default:
-            return nil
-        }
-        return vc
+   ////////////////////////////////////
+    //MARK: IBOutlet method
+    // iboutlet method
+    @IBAction func reminderButtonEditedSelecterMethod(sender: AnyObject) {
+      currentStageId = object.stageId as Int
+        self.performSegueWithIdentifier(kSegue_ReminderSetting, sender: self)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    @IBAction func switchButtonChangeValueAction(sender: AnyObject) {
+        if switchButton.on {
+            print("Switch is off")
+            switchButton.setOn(false, animated:true)
+            let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
+            reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
+            btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+        } else {
+            print( "The Switch is On")
+            switchButton.setOn(true, animated:true)
+            btnEditedReminder.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            btnEditedReminder.titleLabel?.textAlignment = NSTextAlignment.Center
+            let reminder = NSMutableAttributedString(string: editReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!,NSForegroundColorAttributeName:UIColor.blackColor()])
+            reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location:9,length:4))
+            reminder.addAttribute(NSFontAttributeName, value: UIFont(name:"HelveticaNeue-Medium", size: 12)!, range:NSRange(location:9,length:4) )
+            btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+            
+        }
+    }
+    @IBAction func imageViewSelectionAction(sender: AnyObject) {
+        
+        
+    }
+    @IBAction func ButtontoShowInfoData(sender: AnyObject) {
+        dispatch_async(dispatch_get_main_queue(), {
+            self.baseInfoView.hidden = false
+            self.view.bringSubviewToFront(self.baseInfoView)
+            self.lblInfoView.hidden = false
+            self.view.bringSubviewToFront(self.lblInfoView)
+        })
+    }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)->() {
+        resignFirstResponder()
+        self.view.endEditing(true)
+        baseInfoView.hidden = true
+        lblInfoView.hidden = true
+        
+    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        self.navigationController?.navigationBarHidden = false
+        if segue.identifier == kSegue_ReminderSetting{
+            let nextViewController  = segue.destinationViewController as! ReminderViewController
+            nextViewController.title = "Sleep"
+            nextViewController.stageId = currentStageId
+        }
     }
-    */
+    //MARK: collection view delegate method
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        return subObjectArray.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
+    {
+        let subObjectData = subObjectArray[indexPath.row] as power7SubObject
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! PowerOf7CollectionViewCell
+        let url = NSURL(string:"\(power7ImgBaseUrl)\(subObjectData.imgName)")
+        let data = NSData(contentsOfURL: url!)
+        dispatch_async(dispatch_get_main_queue(), {
+            if data == nil{
+                cell.imageView.image = UIImage(named: "img1")
+            }else{
+                cell.imageView.image = UIImage(data: data!)
+            }
+        });
+        cell.lblInfoView.attributedText = convertText(subObjectData.itemDescription)
+        cell.setNeedsLayout()
+        cell.layoutIfNeeded()
+        return cell
+    }
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        switch currentStageId {
+        case 6,7:
+            let itemSizeWidth = self.collectionView.frame.size.width - 10
+            let itemSizeheight = self.collectionView.frame.size.height - 5
+            return CGSizeMake(itemSizeWidth/1, itemSizeheight/2)
+        default:
+            let itemSizeWidth = self.collectionView.frame.size.width - 5
+            let itemSizeheight = self.collectionView.frame.size.height - 5
+            return CGSizeMake(itemSizeWidth/2, itemSizeheight/2)
+        }
+    }
 
 }

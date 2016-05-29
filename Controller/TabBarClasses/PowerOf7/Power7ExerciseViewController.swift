@@ -11,6 +11,8 @@ import UIKit
 class Power7ExerciseViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource{
    @IBOutlet weak var collectionView: UICollectionView!
    @IBOutlet var btnEditedReminder: UIButton!
+    @IBOutlet weak var switchButton: UISwitch!
+    @IBOutlet weak var lblHeader: UILabel!
      var stageId:Int!
      private let reuseIdentifier = "collectionViewCell"
     override func viewDidLoad() {

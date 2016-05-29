@@ -250,4 +250,66 @@ class ParserApi: NSObject {
         }
         return reminderObject
     }
+    class func parsingPowerOfSevenData(dataArray:[NSDictionary])->([powerOfSeven]){
+        var powerOf7 = [powerOfSeven]()
+        for data in dataArray{
+            let object = powerOfSeven()
+            if let Info  = data["Info"] as? String{
+                object.info = Info
+            }
+            if let IsActive  = data["IsActive"] as? Int{
+                object.isActive = IsActive
+            }
+            if let IsReminder  = data["IsReminder"] as? Int{
+                object.isReminder = IsReminder
+            }
+            if let Point  = data["Point"] as? Int{
+                object.Point = Point
+            }
+            if let StageId  = data["StageId"] as? Int{
+                object.stageId = StageId
+            }
+            if let Threshold  = data["Threshold"] as? Int{
+                object.threshold = Threshold
+            }
+            if let TotalClick  = data["TotalClick"] as? Int{
+                object.totalClick = TotalClick
+            }
+            if let StageName  = data["StageName"] as? String{
+                object.stageName = StageName
+            }
+            if let moduleArray = data["PowerOfServenItemList"] as? [[String:AnyObject]]{
+                var subObjectArray = [power7SubObject]()
+                for subData in moduleArray{
+                    let subObject = power7SubObject()
+                    if let Click  = subData["Click"] as? Int{
+                        subObject.click = Click
+                    }
+                    if let ImgName  = subData["ImgName"] as? String{
+                        subObject.imgName = ImgName
+                    }
+                    if let IsActive  = subData["IsActive"] as? Int{
+                        subObject.isActive = IsActive
+                    }
+                    if let ItemDescription  = subData["ItemDescription"] as? String{
+                        subObject.itemDescription = ItemDescription
+                    }
+                    if let ItemName  = subData["ItemName"] as? String{
+                        subObject.itemName = ItemName
+                    }
+                    if let PowerItemId  = subData["PowerItemId"] as? Int{
+                        subObject.powerItemId = PowerItemId
+                    }
+                    if let SortOrder  = subData["SortOrder"] as? Int{
+                        subObject.sortOrder = SortOrder
+                    }
+                  subObjectArray.append(subObject)
+                }
+                object.subobject = subObjectArray
+            }
+            powerOf7.append(object)
+        }
+        return powerOf7
+    }
+
 }

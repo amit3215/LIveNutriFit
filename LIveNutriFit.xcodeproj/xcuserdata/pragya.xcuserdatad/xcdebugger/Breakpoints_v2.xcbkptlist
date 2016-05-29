@@ -33,6 +33,38 @@
             endingLineNumber = "84"
             landmarkName = "responceParsingforPatientLogin(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LIveNutriFit.HavePasswordViewController.responceParsingforPatientLogin (__ObjC.NSDictionary) -&gt; ()"
+                  moduleName = "LIveNutriFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/HavePasswordViewController.swift"
+                  timestampString = "486238360.866634"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "2397">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LIveNutriFit.HavePasswordViewController.responceParsingforPatientLogin (__ObjC.NSDictionary) -&gt; ()"
+                  moduleName = "LIveNutriFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/HavePasswordViewController.swift"
+                  timestampString = "486238360.866807"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "3163">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -487,12 +519,12 @@
                   symbolName = "LIveNutriFit.ReminderViewController.responceParsingforUpdateAlarmData (__ObjC.NSDictionary) -&gt; ()"
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pragya/Desktop/LIveNutriFit%202/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "485645215.418527"
+                  urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
+                  timestampString = "486238360.889569"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "167"
-                  endingLineNumber = "167"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
                   offsetFromSymbolStart = "38">
                </Location>
                <Location
@@ -502,12 +534,12 @@
                   symbolName = "LIveNutriFit.ReminderViewController.responceParsingforUpdateAlarmData (__ObjC.NSDictionary) -&gt; ()"
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pragya/Desktop/LIveNutriFit%202/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "485645215.418921"
+                  urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
+                  timestampString = "486238360.889753"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "167"
-                  endingLineNumber = "167"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
                   offsetFromSymbolStart = "586">
                </Location>
             </Locations>
@@ -535,12 +567,12 @@
                   symbolName = "LIveNutriFit.ReminderViewController.updateReminderWebServiceCalling (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, withjson : Swift.String) -&gt; ()"
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pragya/Desktop/LIveNutriFit%202/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "485645215.420395"
+                  urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
+                  timestampString = "486238360.890825"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "143"
-                  endingLineNumber = "143"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
                   offsetFromSymbolStart = "31">
                </Location>
                <Location
@@ -550,60 +582,12 @@
                   symbolName = "LIveNutriFit.ReminderViewController.(updateReminderWebServiceCalling (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, withjson : Swift.String) -&gt; ()).(closure #1)"
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pragya/Desktop/LIveNutriFit%202/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "485645215.420646"
+                  urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
+                  timestampString = "486238360.890984"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Controller/TabBarClasses/ReminderViewController.swift"
-            timestampString = "485645674.763597"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "getReminderWebServiceCallling(_:withjson:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LIveNutriFit.ReminderViewController.getReminderWebServiceCallling (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, withjson : Swift.String) -&gt; ()"
-                  moduleName = "LIveNutriFit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pragya/Desktop/LIveNutriFit%202/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "485645215.422196"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "121"
-                  endingLineNumber = "121"
-                  offsetFromSymbolStart = "31">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LIveNutriFit.ReminderViewController.(getReminderWebServiceCallling (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, withjson : Swift.String) -&gt; ()).(closure #1)"
-                  moduleName = "LIveNutriFit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pragya/Desktop/LIveNutriFit%202/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "485645215.42244"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
                   offsetFromSymbolStart = "23">
                </Location>
             </Locations>

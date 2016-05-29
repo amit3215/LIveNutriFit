@@ -12,6 +12,8 @@ class Power7WaterViewController: UIViewController {
   
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var btnEditedReminder: UIButton!
+    @IBOutlet weak var switchButton: UISwitch!
+    @IBOutlet weak var lblHeader: UILabel!
       var stageId:Int!
     override func viewDidLoad() {
         super.viewDidLoad()
