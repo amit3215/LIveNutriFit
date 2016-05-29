@@ -9,6 +9,8 @@
 #import "LNPlanPriceViewController.h"
 #import "LNPlanPriceTableViewCell.h"
 #import "LNPlan.h"
+#import "TRWebServiceManger.h"
+#import "LIveNutriFit-Swift.h"
 
 @interface LNPlanPriceViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *planPriceTableView;
@@ -76,9 +78,56 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    NSString *planId = ((LNPlan*)[_currentPack.planList objectAtIndex:indexPath.row]).PackageId;
+    [self updatePlan:planId];
     
 }
 
+-(void)updatePlan:(NSString*)planId{
+    TRWebServiceManger *serviceManager = [TRWebServiceManger sharedManager];
+    
+    
+    NSMutableDictionary *dataDictionary = [NSMutableDictionary dictionaryWithObject:[LiveNutriFitApi sharedInstance].loginData.patientId forKey:@"PatientId"];
+    [dataDictionary setObject:planId forKey:@"SelectedPlanid"];
+    [dataDictionary setObject:@"0" forKey:@"ApplyPoint"];
+    
+    [serviceManager makeRequestWithURL:@"http://52.24.100.222/LiveNutriFitWebService/patient.asmx/GetPatientPlanDieticianV2" andParameter:dataDictionary andCompletionHandler:^(NSDictionary* response){
+        
+        
+        
+        
+        
+        
+        if (response) {
+            
+            
+            if ([[[response objectForKey:@"Status"] objectForKey:@"Status"] boolValue] == true) {
+                
+                
+           
+            
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    
+                    
+               
+                });
+            }else{
+                
+                
+                
+                //                dispatch_async(dispatch_get_main_queue(), ^{
+                //
+                //
+                //                });
+            }
+        }else
+        {
+            
+        }
+        
+    }];
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 90;
