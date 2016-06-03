@@ -42,6 +42,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     @IBOutlet weak var baseInfoView: UIView!
     @IBOutlet weak var lblInfoView: UILabel!
     @IBOutlet weak var btnToShowInfo: UIButton!
+    @IBOutlet weak var lblImgInfoView: UILabel!
     var reuseIdentifier:String!
     
     override func viewDidLoad() {
@@ -52,6 +53,9 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        imageView.userInteractionEnabled = true
+        imageView.addGestureRecognizer(tapGestureRecognizer)
     }
     override func viewWillAppear(animated: Bool) {
         let navigationBar = self.navigationController?.navigationBar
@@ -65,7 +69,11 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     // update the view on the bases of selected  section
     func loadTheViewOntheBasesOfObject(){
         subObject = object.subobject[0]
-        if object.isReminder == 0{
+        
+          currentStageId = self.currentStageId != nil ?object.stageId as Int - 1 :0
+            //object.stageId as Int
+        
+        if object.isReminder == 1{
             switchButton.setOn(false, animated: true)
             let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
             reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
@@ -82,24 +90,35 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
         let url = NSURL(string:"\(power7ImgBaseUrl)\(subObject.imgName)" )
         
         let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
-        dispatch_async(dispatch_get_main_queue(), {
+         dispatch_async(dispatch_get_main_queue(), {
             if data == nil{
                  self.imageView.image = UIImage(named: "img1")
+                 SwiftLoader.hide()
             }else{
             self.imageView.image = UIImage(data: data!)
+                 SwiftLoader.hide()
             } });
         lblInfoView.sizeToFit()
+        lblImgInfoView.hidden = true
+        if currentStageId == 2{
+            lblImgInfoView.hidden = false
+             lblImgInfoView.frame.size.height = CGFloat(MAXFLOAT)
+            lblImgInfoView.text = object.info
+            
+        }
+        
         lblInfoView.frame.size.height = CGFloat(MAXFLOAT)
         lblInfoView.attributedText = convertText(object.info)
-        SwiftLoader.hide()
+       
         
     }
     func loadTheCollectionViewOntheBasesOfObject(){
          subObjectArray = object.subobject
-        currentStageId = object.stageId as Int
+        lblImgInfoView.hidden = true
+       currentStageId = self.currentStageId != nil ?object.stageId as Int - 1:0
         collectionView.delegate = self
         collectionView.dataSource = self
-        if object.isReminder == 0{
+        if object.isReminder == 1{
             switchButton.setOn(false, animated: true)
             let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
             reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
@@ -126,6 +145,10 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
 
     
     @IBAction func onClickSleep(sender: AnyObject) {
+        actionShowLoader()
+        SwiftLoader.show("Loading...", animated: true)
+      power7Sleep.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
+        
        object = power7Content[0]
        subObjectArray = object.subobject
         collectionView.hidden = true
@@ -135,6 +158,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     @IBAction func onClickWater(sender: AnyObject) {
         actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+          power7Water.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[1]
         subObjectArray = object.subobject
         collectionView.hidden = true
@@ -145,6 +169,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     @IBAction func onClickProtien(sender: AnyObject) {
         actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+          power7Protien.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[2]
         subObjectArray = object.subobject
         reuseIdentifier = "2InRow"
@@ -156,6 +181,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     @IBAction func onClickVeggies(sender: AnyObject) {
         actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+          power7Veggis.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[3]
         subObjectArray = object.subobject
          reuseIdentifier = "2InRow"
@@ -167,6 +193,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     @IBAction func onClickFruits(sender: AnyObject) {
         actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+          power7Fruits.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[4]
         subObjectArray = object.subobject
          reuseIdentifier = "2InRow"
@@ -178,7 +205,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     @IBAction func onClickNuts(sender: AnyObject) {
         actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
-       
+         power7Nuts.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[5]
         subObjectArray = object.subobject
          reuseIdentifier = "SingleInRow"
@@ -189,6 +216,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     @IBAction func onClickExercise(sender: AnyObject) {
         actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+        power7Exercise.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[6]
         subObjectArray = object.subobject
          reuseIdentifier = "SingleInRow"
@@ -245,11 +273,21 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
                         print(data)
                         power7Content = data
                      //   LiveNutriFitApi.sharedInstance.power7Content = data
-                          dispatch_async(dispatch_get_main_queue(), {
-                        SwiftLoader.hide()
-                           self.object  = self.power7Content[0]
+                        
+                        
+                          SwiftLoader.hide()
+                            self.object  = self.power7Content[self.currentStageId != nil ?self.currentStageId :0]
+                            if self.currentStageId != nil{
+                            if self.currentStageId < 2{
                              self.loadTheViewOntheBasesOfObject()
-                        })
+                            //    self.collectionView.reloadData()
+                            }else{
+                              self.loadTheCollectionViewOntheBasesOfObject()
+                                
+                                }
+                            }else{
+                                   self.loadTheViewOntheBasesOfObject()
+                        }
 
                     }
                 }
@@ -265,12 +303,18 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     }
     
     @IBAction func switchButtonChangeValueAction(sender: AnyObject) {
+        var param = [String:AnyObject]()
+        param["PatientId"] = LiveNutriFitApi.sharedInstance.loginData.patientId
+        param["StageId"] = currentStageId + 1
+        param["Module"] = "PowerOf7"
+       
         if switchButton.on {
             print("Switch is off")
             switchButton.setOn(false, animated:true)
             let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
             reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
             btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+             param["IsActive"] = 1
         } else {
             print( "The Switch is On")
             switchButton.setOn(true, animated:true)
@@ -280,11 +324,91 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
             reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location:9,length:4))
             reminder.addAttribute(NSFontAttributeName, value: UIFont(name:"HelveticaNeue-Medium", size: 12)!, range:NSRange(location:9,length:4) )
             btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+             param["IsActive"] = 0
             
         }
+        
+        SetReminderOffV2WebServiceCalling(param)
     }
+    func SetReminderOffV2WebServiceCalling(param:[String:AnyObject]){
+        ConnectionClass.patientLoginServiceImplementation(param, withUrlString: kSetReminderOffV2) { (data, error) -> Void in
+            if error != nil{
+                print(error?.description)
+            }else{
+                if data != nil{
+                    do {
+                        let result = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers)as! NSDictionary
+                        if let dict = result["d"] as? String {
+                            let jsonData = self.convertStringToDictionary(dict)
+                            print(jsonData)
+                            if let requestStatus = jsonData!["Status"] as? [String:AnyObject] {
+                                if let Status = requestStatus["Status"] as? Int{
+                                    if Status == 1{
+                                        dispatch_async(dispatch_get_main_queue(), {
+                                            self.webServiceCallingTogetPowerOfSevenData()
+                                        })
+                                        
+                                    }
+                                }
+                            }
+                        }
+                        print("Result -> \(result)")
+                    } catch {
+                        print("Error -> \(error)")
+                    }
+                }else{
+                    // network not connected
+                    
+                }
+            }
+        }
+
+    }
+    
+
     @IBAction func imageViewSelectionAction(sender: AnyObject) {
         
+        if Int(object.totalClick) < Int(object.threshold){
+         var param = [String:AnyObject]()
+        param["patientId"] = LiveNutriFitApi.sharedInstance.loginData.patientId
+        param["stageId"] = Int(object.stageId)
+        param["itemId"] = Int(subObject.powerItemId)
+        PowerOfSevenUpdateWebServiceCalling(param, withjson: kManagePowerOfSevenPoint)
+        }
+    }
+    
+    func PowerOfSevenUpdateWebServiceCalling(param:[String:AnyObject], withjson type:String) {
+        ConnectionClass.patientLoginServiceImplementation(param, withUrlString: type) { (data, error) -> Void in
+            if error != nil{
+                print(error?.description)
+            }else{
+                if data != nil{
+                    do {
+                        let result = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers)as! NSDictionary
+                        if let dict = result["d"] as? String {
+                            let jsonData = self.convertStringToDictionary(dict)
+                           print(jsonData)
+                              if let requestStatus = jsonData!["Status"] as? [String:AnyObject] {
+                            if let Status = requestStatus["Status"] as? Int{
+                                if Status == 1{
+                                     dispatch_async(dispatch_get_main_queue(), {
+                                 self.webServiceCallingTogetPowerOfSevenData()
+                                    })
+                                    
+                                }
+                            }
+                          }
+                        }
+                        print("Result -> \(result)")
+                    } catch {
+                        print("Error -> \(error)")
+                    }
+                }else{
+                    // network not connected
+                    
+                }
+            }
+        }
         
     }
     @IBAction func ButtontoShowInfoData(sender: AnyObject) {
@@ -320,6 +444,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     {
         let subObjectData = subObjectArray[indexPath.row] as power7SubObject
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! PowerOf7CollectionViewCell
+          cell.lblClickView.hidden = true
         let url = NSURL(string:"\(power7ImgBaseUrl)\(subObjectData.imgName)")
         let data = NSData(contentsOfURL: url!)
         dispatch_async(dispatch_get_main_queue(), {
@@ -330,20 +455,36 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
             }
         });
         cell.lblInfoView.attributedText = convertText(subObjectData.itemDescription)
+        if subObjectData.click != 0{
+            cell.lblClickView.hidden = false
+            cell.lblClickView.text = "\(subObjectData.click)X"
+            
+        }
         cell.setNeedsLayout()
         cell.layoutIfNeeded()
         return cell
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         switch currentStageId {
-        case 6,7:
+        case 5,6:
             let itemSizeWidth = self.collectionView.frame.size.width - 10
             let itemSizeheight = self.collectionView.frame.size.height - 5
-            return CGSizeMake(itemSizeWidth/1, itemSizeheight/2)
+            return CGSizeMake(itemSizeWidth/1, itemSizeheight/3)
         default:
             let itemSizeWidth = self.collectionView.frame.size.width - 5
             let itemSizeheight = self.collectionView.frame.size.height - 5
-            return CGSizeMake(itemSizeWidth/2, itemSizeheight/2)
+            return CGSizeMake(itemSizeWidth/2, itemSizeheight/3)
+        }
+    }
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath){
+        
+        subObject = subObjectArray[indexPath.row]
+        if Int(object.totalClick) < Int(object.threshold){
+            var param = [String:AnyObject]()
+            param["patientId"] = LiveNutriFitApi.sharedInstance.loginData.patientId
+            param["stageId"] = Int(object.stageId)
+            param["itemId"] = Int(subObject.powerItemId)
+            PowerOfSevenUpdateWebServiceCalling(param, withjson: kManagePowerOfSevenPoint)
         }
     }
 

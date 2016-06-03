@@ -33,38 +33,6 @@
             endingLineNumber = "84"
             landmarkName = "responceParsingforPatientLogin(_:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LIveNutriFit.HavePasswordViewController.responceParsingforPatientLogin (__ObjC.NSDictionary) -&gt; ()"
-                  moduleName = "LIveNutriFit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/HavePasswordViewController.swift"
-                  timestampString = "486238360.866634"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "2397">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LIveNutriFit.HavePasswordViewController.responceParsingforPatientLogin (__ObjC.NSDictionary) -&gt; ()"
-                  moduleName = "LIveNutriFit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/HavePasswordViewController.swift"
-                  timestampString = "486238360.866807"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "3163">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -520,7 +488,7 @@
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "486238360.889569"
+                  timestampString = "486627929.85407"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "173"
@@ -535,7 +503,7 @@
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "486238360.889753"
+                  timestampString = "486627929.854413"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "173"
@@ -568,7 +536,7 @@
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "486238360.890825"
+                  timestampString = "486627929.855799"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "149"
@@ -583,7 +551,7 @@
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "486238360.890984"
+                  timestampString = "486627929.856083"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "150"

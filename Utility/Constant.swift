@@ -22,6 +22,8 @@ let kDieticianDetailList = "Dietician_List";
 let kGetReminderList = "GetReminderList";// get reminder list
 let kManageRemindersV2 = "ManageRemindersV2";// ManageRemindersV2
 let kGetPowerOfSeven = "GetPowerOfSevenPointList";
+let kManagePowerOfSevenPoint = "ManagePowerOfSevenPoint";// manage power of seven
+let kSetReminderOffV2 = "SetReminderOffV2";// set reminder on and off
 // uibutton title
 // screen Title
 let kTitle_Register = "REGISTER";

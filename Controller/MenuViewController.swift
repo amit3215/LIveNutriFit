@@ -54,9 +54,9 @@ class MenuViewController: BaseViewController,UICollectionViewDelegate,UICollecti
 //        cell.btnIconImage.setBackgroundImage(UIImage(named: imageArray[indexPath.row]), forState: UIControlState.Normal)
         cell.lblCellHeader.text = iconName[indexPath.row]
         cell.cellImgView.image = UIImage(named: imageArray[indexPath.row])
-        cell.cellImgView.layer.borderColor = UIColor.whiteColor().CGColor
-        cell.cellImgView.layer.cornerRadius = cell.cellImgView.frame.size.width/7.5
-        cell.cellImgView.layer.borderWidth = 2
+//        cell.cellImgView.layer.borderColor = UIColor.whiteColor().CGColor
+//        cell.cellImgView.layer.cornerRadius = cell.cellImgView.frame.size.width/7.5
+//        cell.cellImgView.layer.borderWidth = 2
        // cell.backgroundColor = UIColor.redColor()
         return cell
     }
