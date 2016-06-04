@@ -8134,11 +8134,11 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEB-ms-by5">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="Bfh-8f-Qsu"/>
                                     <constraint firstAttribute="height" constant="35" id="zSO-zF-H14"/>
                                 </constraints>
+                                <state key="normal" backgroundImage="detailInfo"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Bfh-8f-Qsu"/>
@@ -8208,16 +8208,6 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdsda" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCo-mt-eLq">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="10" y="616" width="380" height="21"/>
-                                </variation>
-                            </label>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zuv-Gx-Vkz">
                                 <rect key="frame" x="14" y="155" width="371" height="540"/>
                                 <gestureRecognizers/>
@@ -8225,6 +8215,13 @@
                                     <outletCollection property="gestureRecognizers" destination="JU3-ik-pdq" appends="YES" id="NA9-S0-HmT"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdsda" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCo-mt-eLq">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DO SIMPLE EXERCISES FOR A FIT, FABULOUS BODY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sy7-GW-SIc">
                                 <rect key="frame" x="10" y="72" width="380" height="27"/>
                                 <constraints>
@@ -8534,8 +8531,8 @@
                                 <exclude reference="jBS-KD-Tb5"/>
                                 <exclude reference="u7N-8t-3of"/>
                                 <exclude reference="ccO-XT-bMQ"/>
-                                <exclude reference="fCo-mt-eLq"/>
                                 <exclude reference="zuv-Gx-Vkz"/>
+                                <exclude reference="fCo-mt-eLq"/>
                                 <exclude reference="sy7-GW-SIc"/>
                                 <exclude reference="Wr8-BM-Zf4"/>
                                 <exclude reference="EPf-hB-Nkj"/>
@@ -8581,8 +8578,8 @@
                                 <include reference="jBS-KD-Tb5"/>
                                 <include reference="u7N-8t-3of"/>
                                 <include reference="ccO-XT-bMQ"/>
-                                <include reference="fCo-mt-eLq"/>
                                 <include reference="zuv-Gx-Vkz"/>
+                                <include reference="fCo-mt-eLq"/>
                                 <include reference="sy7-GW-SIc"/>
                                 <include reference="Wr8-BM-Zf4"/>
                                 <include reference="EPf-hB-Nkj"/>
@@ -10599,6 +10596,7 @@
         <image name="PowerIcon" width="24" height="24"/>
         <image name="QuitIcon" width="24" height="24"/>
         <image name="UserIcon" width="24" height="24"/>
+        <image name="detailInfo" width="70" height="70"/>
         <image name="icon-1" width="50" height="30"/>
         <image name="icon-2" width="50" height="30"/>
         <image name="icon-3" width="50" height="30"/>

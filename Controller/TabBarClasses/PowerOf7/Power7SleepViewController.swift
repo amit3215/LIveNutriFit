@@ -39,7 +39,7 @@ class Power7SleepViewController: UIViewController{
         loadTheViewOntheBasesOfObject()
     }
     func loadTheViewOntheBasesOfObject(){
-        if object.isReminder == 0{
+        if object.isReminder as Bool{
             switchButton.setOn(false, animated: true)
             let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
             reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))

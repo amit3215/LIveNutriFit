@@ -260,7 +260,7 @@ class ParserApi: NSObject {
             if let IsActive  = data["IsActive"] as? Int{
                 object.isActive = IsActive
             }
-            if let IsReminder  = data["IsReminder"] as? Int{
+            if let IsReminder  = data["IsReminder"] as? Bool{
                 object.isReminder = IsReminder
             }
             if let Point  = data["Point"] as? Int{

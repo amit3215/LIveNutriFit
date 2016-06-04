@@ -47,6 +47,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -58,6 +59,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
         imageView.addGestureRecognizer(tapGestureRecognizer)
     }
     override func viewWillAppear(animated: Bool) {
+        lblImgInfoView.hidden = true
         let navigationBar = self.navigationController?.navigationBar
         navigationBar?.barStyle = UIBarStyle.Default
         navigationBar?.barTintColor = kColor_navigationBar
@@ -69,23 +71,28 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     // update the view on the bases of selected  section
     func loadTheViewOntheBasesOfObject(){
         subObject = object.subobject[0]
-        
           currentStageId = self.currentStageId != nil ?object.stageId as Int - 1 :0
             //object.stageId as Int
-        
-        if object.isReminder == 1{
-            switchButton.setOn(false, animated: true)
-            let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
-            reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
-            btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+        self.title = object.stageName
+        if object.isReminder as Bool{
+            dispatch_async(dispatch_get_main_queue(), {
+                self.switchButton.setOn(true, animated: true)
+                self.btnEditedReminder.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+                self.btnEditedReminder.titleLabel?.textAlignment = NSTextAlignment.Center
+                let reminder =  NSMutableAttributedString(string: editReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!,NSForegroundColorAttributeName:UIColor.blackColor()])
+                reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location:9,length:4))
+                reminder.addAttribute(NSFontAttributeName, value: UIFont(name:"HelveticaNeue-Medium", size: 12)!, range:NSRange(location:9,length:4) )
+                self.btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+            })
+            
         }else{
-            switchButton.setOn(true, animated: true)
-            btnEditedReminder.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
-            btnEditedReminder.titleLabel?.textAlignment = NSTextAlignment.Center
-            let reminder =  NSMutableAttributedString(string: editReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!,NSForegroundColorAttributeName:UIColor.blackColor()])
-            reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location:9,length:4))
-            reminder.addAttribute(NSFontAttributeName, value: UIFont(name:"HelveticaNeue-Medium", size: 12)!, range:NSRange(location:9,length:4) )
-            btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+            dispatch_async(dispatch_get_main_queue(), {
+                self.switchButton.setOn(false, animated: true)
+                let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
+                reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
+                self.btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+            })
+            
         }
         let url = NSURL(string:"\(power7ImgBaseUrl)\(subObject.imgName)" )
         
@@ -100,10 +107,10 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
             } });
         lblInfoView.sizeToFit()
         lblImgInfoView.hidden = true
-        if currentStageId == 2{
+        if currentStageId == 1{
             lblImgInfoView.hidden = false
              lblImgInfoView.frame.size.height = CGFloat(MAXFLOAT)
-            lblImgInfoView.text = object.info
+            lblImgInfoView.attributedText = convertText(subObject.itemDescription)
             
         }
         
@@ -115,10 +122,11 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     func loadTheCollectionViewOntheBasesOfObject(){
          subObjectArray = object.subobject
         lblImgInfoView.hidden = true
+          self.title = object.stageName
        currentStageId = self.currentStageId != nil ?object.stageId as Int - 1:0
         collectionView.delegate = self
         collectionView.dataSource = self
-        if object.isReminder == 1{
+        if object.isReminder as Bool{
             switchButton.setOn(false, animated: true)
             let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
             reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
@@ -145,10 +153,11 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
 
     
     @IBAction func onClickSleep(sender: AnyObject) {
-        actionShowLoader()
+         dispatch_async(dispatch_get_main_queue(), {
+       self.actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+            })
       power7Sleep.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
-        
        object = power7Content[0]
        subObjectArray = object.subobject
         collectionView.hidden = true
@@ -156,8 +165,10 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
          loadTheViewOntheBasesOfObject()
     }
     @IBAction func onClickWater(sender: AnyObject) {
-        actionShowLoader()
+         dispatch_async(dispatch_get_main_queue(), {
+        self.actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+            })
           power7Water.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[1]
         subObjectArray = object.subobject
@@ -167,20 +178,24 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
        
     }
     @IBAction func onClickProtien(sender: AnyObject) {
-        actionShowLoader()
+         dispatch_async(dispatch_get_main_queue(), {
+        self.actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
-          power7Protien.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
+            })
+        power7Protien.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[2]
         subObjectArray = object.subobject
         reuseIdentifier = "2InRow"
         collectionView.hidden = false
-         imageView.hidden = true
-         loadTheCollectionViewOntheBasesOfObject()
+        imageView.hidden = true
+        loadTheCollectionViewOntheBasesOfObject()
         
         }
     @IBAction func onClickVeggies(sender: AnyObject) {
-        actionShowLoader()
+         dispatch_async(dispatch_get_main_queue(), {
+        self.actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+            })
           power7Veggis.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[3]
         subObjectArray = object.subobject
@@ -191,8 +206,10 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
        
         }
     @IBAction func onClickFruits(sender: AnyObject) {
-        actionShowLoader()
+         dispatch_async(dispatch_get_main_queue(), {
+       self.actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+            })
           power7Fruits.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[4]
         subObjectArray = object.subobject
@@ -203,8 +220,10 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
         
         }
     @IBAction func onClickNuts(sender: AnyObject) {
-        actionShowLoader()
+         dispatch_async(dispatch_get_main_queue(), {
+        self.actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+            })
          power7Nuts.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[5]
         subObjectArray = object.subobject
@@ -214,8 +233,10 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
          loadTheCollectionViewOntheBasesOfObject()
     }
     @IBAction func onClickExercise(sender: AnyObject) {
-        actionShowLoader()
+         dispatch_async(dispatch_get_main_queue(), {
+        self.actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+            })
         power7Exercise.setTitleColor(kColor_navigationBar, forState: UIControlState.Selected)
         object = power7Content[6]
         subObjectArray = object.subobject
@@ -227,8 +248,10 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     
     //   MARK:- calling Of web Services of power of seven
     func webServiceCallingTogetPowerOfSevenData(){
-        actionShowLoader()
+         dispatch_async(dispatch_get_main_queue(), {
+        self.actionShowLoader()
         SwiftLoader.show("Loading...", animated: true)
+        })
         var param = [String:AnyObject]()
         param[kJsonKey_PatientId] = LiveNutriFitApi.sharedInstance.loginData.patientId
         
@@ -244,7 +267,6 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
                     do {
                         let result = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers)as! NSDictionary
                         self.responceParsingforPowerOfSeven(result)
-                        print("Result -> \(result)")
                     } catch {
                         print("Error -> \(error)")
                     }
@@ -260,9 +282,8 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     func responceParsingforPowerOfSeven(result:NSDictionary)
     {
         if let dict = result["d"] as? String {
-            //    print(dict)
             let jsonData = convertStringToDictionary(dict)
-            print(jsonData)
+          //  print(jsonData)
             if let requestStatus = jsonData!["Status"] as? [String:AnyObject] {
                 if let status = requestStatus["Status"] as? Int{
                     if status == 1{
@@ -270,7 +291,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
                         print(powerOfSevenContent)
                        
                         let data = ParserApi.parsingPowerOfSevenData(powerOfSevenContent)
-                        print(data)
+                       // print(data)
                         power7Content = data
                      //   LiveNutriFitApi.sharedInstance.power7Content = data
                         
@@ -298,7 +319,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
     //MARK: IBOutlet method
     // iboutlet method
     @IBAction func reminderButtonEditedSelecterMethod(sender: AnyObject) {
-      currentStageId = object.stageId as Int
+     // currentStageId = object.stageId as Int
         self.performSegueWithIdentifier(kSegue_ReminderSetting, sender: self)
     }
     
@@ -308,14 +329,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
         param["StageId"] = currentStageId + 1
         param["Module"] = "PowerOf7"
        
-        if switchButton.on {
-            print("Switch is off")
-            switchButton.setOn(false, animated:true)
-            let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
-            reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
-            btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
-             param["IsActive"] = 1
-        } else {
+        if !switchButton.on{
             print( "The Switch is On")
             switchButton.setOn(true, animated:true)
             btnEditedReminder.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
@@ -324,8 +338,15 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
             reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location:9,length:4))
             reminder.addAttribute(NSFontAttributeName, value: UIFont(name:"HelveticaNeue-Medium", size: 12)!, range:NSRange(location:9,length:4) )
             btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
-             param["IsActive"] = 0
-            
+            param["IsActive"] = 0
+           
+        } else {
+            print("Switch is off")
+            switchButton.setOn(false, animated:true)
+            let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
+            reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
+            btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
+            param["IsActive"] = 1
         }
         
         SetReminderOffV2WebServiceCalling(param)
@@ -352,7 +373,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
                                 }
                             }
                         }
-                        print("Result -> \(result)")
+                       // print("Result -> \(result)")
                     } catch {
                         print("Error -> \(error)")
                     }
@@ -399,7 +420,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
                             }
                           }
                         }
-                        print("Result -> \(result)")
+                     //   print("Result -> \(result)")
                     } catch {
                         print("Error -> \(error)")
                     }
@@ -430,8 +451,8 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
         self.navigationController?.navigationBarHidden = false
         if segue.identifier == kSegue_ReminderSetting{
             let nextViewController  = segue.destinationViewController as! ReminderViewController
-            nextViewController.title = "Sleep"
-            nextViewController.stageId = currentStageId
+            nextViewController.title = object.stageName
+            nextViewController.stageId = currentStageId + 1
         }
     }
     //MARK: collection view delegate method

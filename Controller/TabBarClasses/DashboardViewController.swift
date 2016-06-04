@@ -11,6 +11,7 @@ import UIKit
 class DashboardViewController: BaseViewController,UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    var loginInfo:LoginInfo = LiveNutriFitApi.sharedInstance.loginData
     
     
 
@@ -68,6 +69,13 @@ class DashboardViewController: BaseViewController,UITableViewDataSource,UITableV
             let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! CoachSliderTableViewCell
             cell.selectionStyle = .None
             cell.lblCellHeader.text = dashBoard[indexPath.row]
+            switch indexPath.row {
+            case 3:
+            cell.lblCellContent.text = String( loginInfo.targetWeight)
+                
+            default:
+                 cell.lblCellContent.text = String(loginInfo.targetWeight)
+            }
             cell.slider.value = 80
              return cell
         case 8:
