@@ -311,5 +311,46 @@ class ParserApi: NSObject {
         }
         return powerOf7
     }
+    class func parsingOfferArrayList(dataArray:NSArray)->([promoOffer]){
+        let currentDateTime = NSDate()
+        print(dataArray)
+        var offerObjectArray:[promoOffer] = [promoOffer]()
+        for object in dataArray{
+            let promo:promoOffer = promoOffer()
+            if let ValidUpto  = object["ValidUpto"] as? String{
+                let formatter = NSDateFormatter()
+                formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+                let localDate = formatter.dateFromString(ValidUpto)
+                if (localDate!.isGreaterThanDate(currentDateTime)){
+                    let formatter1 = NSDateFormatter()
+                    formatter1.dateStyle = NSDateFormatterStyle.MediumStyle
+                    //formatter.timeStyle = .MediumStyle
+                    let dateString = formatter1.stringFromDate(localDate!)
+                    promo.ValidUpto = dateString
+                    
+                    if let PackageId  = object["PackageId"] as? Int{
+                        promo.PackageId = PackageId
+                    }
+                    if let PromoCode  = object["PromoCode"] as? String{
+                        promo.PromoCode = PromoCode
+                    }
+                    if let PromoDescription  = object["PromoDescription"] as? String{
+                        promo.PromoDescription = PromoDescription
+                    }
+                    if let PromoDiscountAmount  = object["PromoDiscountAmount"] as? Int{
+                        promo.PromoDiscountAmount = PromoDiscountAmount
+                    }
+                    if let PromoDiscountId  = object["PromoDiscountId"] as? Int{
+                        promo.PromoDiscountId = PromoDiscountId
+                    }
+                    if let PromoName  = object["PromoName"] as? String{
+                        promo.PromoName = PromoName
+                    }
+                    offerObjectArray.append(promo)
+                }
+            }
+        }
+        return offerObjectArray
+    }
 
 }

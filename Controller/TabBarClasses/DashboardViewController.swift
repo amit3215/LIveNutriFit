@@ -17,6 +17,7 @@ class DashboardViewController: BaseViewController,UITableViewDataSource,UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
+         webServiceCallingToGetDashBordData()
 
         // Do any additional setup after loading the view.
     }
@@ -34,6 +35,7 @@ class DashboardViewController: BaseViewController,UITableViewDataSource,UITableV
         navigationBar?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.addSlideMenuButton()
     }
+    //MARK: table view delegate method
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 14
         
@@ -115,7 +117,59 @@ class DashboardViewController: BaseViewController,UITableViewDataSource,UITableV
             return 50
         }
     }
-   
+    // MARK: - web service calling
+    func webServiceCallingToGetDashBordData(){
+        dispatch_async(dispatch_get_main_queue(), {
+            self.actionShowLoader()
+            SwiftLoader.show("Loading...", animated: true)
+        })
+        var param = [String:AnyObject]()
+        param[kJsonKey_PatientId] = LiveNutriFitApi.sharedInstance.loginData.patientId
+        
+        GetDashBoardDataWebServiceCalling(param, withjson: kPatient_GetDashboardDetails)
+        
+    }
+    func GetDashBoardDataWebServiceCalling(param:[String:AnyObject], withjson type:String) {
+        ConnectionClass.patientLoginServiceImplementation(param, withUrlString: type) { (data, error) -> Void in
+            if error != nil{
+                print(error?.description)
+            }else{
+                if data != nil{
+                    do {
+                        let result = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers)as! NSDictionary
+                        self.responceParsingforDashBoard(result)
+                    } catch {
+                        print("Error -> \(error)")
+                    }
+                }else{
+                    // network not connected
+                    
+                }
+            }
+        }
+        
+    }
+    // responce parser for update alarm data
+    func responceParsingforDashBoard(result:NSDictionary)
+    {
+        if let dict = result["d"] as? String {
+            let jsonData = convertStringToDictionary(dict)
+            //  print(jsonData)
+            if let requestStatus = jsonData!["Status"] as? [String:AnyObject] {
+                if let status = requestStatus["Status"] as? Int{
+                    if status == 1{
+                        let powerOfSevenContent = jsonData!["PowerOfServenPointList"] as! [NSDictionary]
+                        print(powerOfSevenContent)
+//                        let data = ParserApi.parsingPowerOfSevenData(powerOfSevenContent)
+//                         print(data)
+                        //   LiveNutriFitApi.sharedInstance.power7Content = data
+                        SwiftLoader.hide()
+                        
+                    }
+                }
+            }
+        }
+    }
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.

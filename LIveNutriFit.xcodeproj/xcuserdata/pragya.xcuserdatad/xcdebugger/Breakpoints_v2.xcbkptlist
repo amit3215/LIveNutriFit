@@ -33,6 +33,38 @@
             endingLineNumber = "84"
             landmarkName = "responceParsingforPatientLogin(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LIveNutriFit.HavePasswordViewController.responceParsingforPatientLogin (__ObjC.NSDictionary) -&gt; ()"
+                  moduleName = "LIveNutriFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/HavePasswordViewController.swift"
+                  timestampString = "486885957.077363"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "2397">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LIveNutriFit.HavePasswordViewController.responceParsingforPatientLogin (__ObjC.NSDictionary) -&gt; ()"
+                  moduleName = "LIveNutriFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/HavePasswordViewController.swift"
+                  timestampString = "486885957.077504"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "3163">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -279,54 +311,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Shared Class/BaseViewController.swift"
-            timestampString = "484774519.105787"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "slideMenuItemSelectedAtIndex(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Controller/MenuViewController.swift"
-            timestampString = "485518543.614763"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "collectionView(_:didSelectItemAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shared Class/BaseViewController.swift"
-            timestampString = "484774680.689429"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "slideMenuItemSelectedAtIndex(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Controller/RegisterViewController.swift"
             timestampString = "484777113.181094"
             startingColumnNumber = "9223372036854775807"
@@ -344,11 +328,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controller/TabBarClasses/DashboardViewController.swift"
-            timestampString = "486712763.304376"
+            timestampString = "486797311.837876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -488,7 +472,7 @@
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "486712808.687368"
+                  timestampString = "486885957.094229"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "173"
@@ -503,7 +487,7 @@
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "486712808.687594"
+                  timestampString = "486885957.094374"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "173"
@@ -536,7 +520,7 @@
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "486712808.689064"
+                  timestampString = "486885957.095252"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "149"
@@ -551,7 +535,7 @@
                   moduleName = "LIveNutriFit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pragya/Documents/LiveNutrifit/Controller/TabBarClasses/ReminderViewController.swift"
-                  timestampString = "486712808.689334"
+                  timestampString = "486885957.095401"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "150"

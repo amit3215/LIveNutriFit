@@ -124,8 +124,6 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
         lblImgInfoView.hidden = true
           self.title = object.stageName
        currentStageId = self.currentStageId != nil ?object.stageId as Int - 1:0
-        collectionView.delegate = self
-        collectionView.dataSource = self
         if object.isReminder as Bool{
             switchButton.setOn(false, animated: true)
             let reminder = NSMutableAttributedString(string: onlyReminder, attributes: [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: 14.0)!])
@@ -145,6 +143,8 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
         lblInfoView.frame.size.height = CGFloat(MAXFLOAT)
         lblInfoView.attributedText = convertText(object.info)
          dispatch_async(dispatch_get_main_queue(), {
+            self.collectionView.delegate = self
+            self.collectionView.dataSource = self
         self.collectionView.reloadData()
          SwiftLoader.hide()
         })
@@ -339,6 +339,7 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
             reminder.addAttribute(NSFontAttributeName, value: UIFont(name:"HelveticaNeue-Medium", size: 12)!, range:NSRange(location:9,length:4) )
             btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
             param["IsActive"] = 0
+            SetReminderOffV2WebServiceCalling(param)
            
         } else {
             print("Switch is off")
@@ -347,9 +348,10 @@ class PowerOf7ViewController: BaseViewController,UICollectionViewDelegate, UICol
             reminder.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: NSRange(location: 0,length:NSString(string: reminder.string).length ))
             btnEditedReminder.setAttributedTitle(reminder, forState: UIControlState.Normal)
             param["IsActive"] = 1
+            SetReminderOffV2WebServiceCalling(param)
         }
         
-        SetReminderOffV2WebServiceCalling(param)
+      
     }
     func SetReminderOffV2WebServiceCalling(param:[String:AnyObject]){
         ConnectionClass.patientLoginServiceImplementation(param, withUrlString: kSetReminderOffV2) { (data, error) -> Void in

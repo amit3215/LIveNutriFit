@@ -14,7 +14,7 @@ let baseUrl = "http://52.24.100.222/LiveNutriFitWebService/patient.asmx/";
 // image download url
 let power7ImgBaseUrl = "http://www.livenutrifit.com/LiveNutriFitWebService/uploads/powerof7images/";
 
-// diffrent services extensions
+// diffrent web services Url
 let kPatientLogin = "Patient_LoginV2"; // PatientLogin
 let KPatientLoginOTP = "Patient_Login_OTP";//Patient Login with OTP
 let KPatient_RegisterV3 = "Patient_RegisterV3";
@@ -24,6 +24,8 @@ let kManageRemindersV2 = "ManageRemindersV2";// ManageRemindersV2
 let kGetPowerOfSeven = "GetPowerOfSevenPointList";
 let kManagePowerOfSevenPoint = "ManagePowerOfSevenPoint";// manage power of seven
 let kSetReminderOffV2 = "SetReminderOffV2";// set reminder on and off
+let kPatient_GetDashboardDetails = "Patient_GetDashboardDetails"; // dashboard data
+let kPromoDiscount_GetList = "PromoDiscount_GetList" // get offer data
 // uibutton title
 // screen Title
 let kTitle_Register = "REGISTER";
@@ -96,6 +98,7 @@ let kJsonKey_MobileNo = "MobileNo";
 let kJsonKey_PatientId = "PatientId";
 let kJsonKey_Module = "Module";
 let kJsonKey_StageId = "StageId";
+let kJsonKey_PromoCode = "PromoCode"
 // reminder jsonkey
 let  kJsonKey_ReminderId = "ReminderId"
 let  kJsonKey_Frequency = "Frequency"

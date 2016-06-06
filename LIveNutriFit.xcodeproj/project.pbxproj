@@ -116,6 +116,11 @@
 		AF9FFF9B1CF99E3C006761F3 /* activityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFF9A1CF99E3C006761F3 /* activityIndicator.swift */; };
 		AF9FFF9D1CFB1671006761F3 /* CreateRichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFF9C1CFB1671006761F3 /* CreateRichText.swift */; };
 		AF9FFFA21CFB5AD6006761F3 /* PowerOf7CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFA11CFB5AD6006761F3 /* PowerOf7CollectionViewCell.swift */; };
+		AF9FFFA41D042202006761F3 /* PromoOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFA31D042202006761F3 /* PromoOfferViewController.swift */; };
+		AF9FFFA71D045F00006761F3 /* OfferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFA61D045F00006761F3 /* OfferTableViewCell.swift */; };
+		AF9FFFA91D04772D006761F3 /* PromoOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFA81D04772D006761F3 /* PromoOffer.swift */; };
+		AF9FFFAB1D0492C3006761F3 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFAA1D0492C3006761F3 /* Date.swift */; };
+		AF9FFFAF1D04A146006761F3 /* DottedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFAE1D04A146006761F3 /* DottedBorder.swift */; };
 		AFD116861CBE198F0033A074 /* WeightTypeSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD116851CBE198F0033A074 /* WeightTypeSelectionTableViewCell.swift */; };
 		AFD116911CBF81650033A074 /* WeightPrefrenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD116901CBF81650033A074 /* WeightPrefrenceTableViewCell.swift */; };
 		AFD116961CC0B9790033A074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD116941CC0B9790033A074 /* Main.storyboard */; };
@@ -306,6 +311,11 @@
 		AF9FFF9A1CF99E3C006761F3 /* activityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = activityIndicator.swift; sourceTree = "<group>"; };
 		AF9FFF9C1CFB1671006761F3 /* CreateRichText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRichText.swift; sourceTree = "<group>"; };
 		AF9FFFA11CFB5AD6006761F3 /* PowerOf7CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerOf7CollectionViewCell.swift; sourceTree = "<group>"; };
+		AF9FFFA31D042202006761F3 /* PromoOfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoOfferViewController.swift; sourceTree = "<group>"; };
+		AF9FFFA61D045F00006761F3 /* OfferTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferTableViewCell.swift; sourceTree = "<group>"; };
+		AF9FFFA81D04772D006761F3 /* PromoOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoOffer.swift; sourceTree = "<group>"; };
+		AF9FFFAA1D0492C3006761F3 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		AF9FFFAE1D04A146006761F3 /* DottedBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DottedBorder.swift; sourceTree = "<group>"; };
 		AFD116851CBE198F0033A074 /* WeightTypeSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightTypeSelectionTableViewCell.swift; sourceTree = "<group>"; };
 		AFD116901CBF81650033A074 /* WeightPrefrenceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightPrefrenceTableViewCell.swift; sourceTree = "<group>"; };
 		AFD116951CC0B9790033A074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -516,6 +526,7 @@
 				AF1CB6151CD333FF008DF1C5 /* TwoStepAwayViewController.swift */,
 				AF1CB6181CD400D7008DF1C5 /* CoachDetailsViewController.swift */,
 				AF1CB61D1CD46FE7008DF1C5 /* CoachModelViewViewController.swift */,
+				AF9FFFA31D042202006761F3 /* PromoOfferViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -528,6 +539,8 @@
 				3AFD06FE1C7367A900549C48 /* ColorExtension.swift */,
 				AFDE3F641CF1C440009C1180 /* StringToFloat.swift */,
 				AFDE3F661CF1D40A009C1180 /* ConverInJson.swift */,
+				AF9FFFAA1D0492C3006761F3 /* Date.swift */,
+				AF9FFFAE1D04A146006761F3 /* DottedBorder.swift */,
 			);
 			path = Extensionclass;
 			sourceTree = "<group>";
@@ -665,6 +678,7 @@
 		AF55E89B1CA7A77F001636B0 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
+				AF9FFFA51D045E31006761F3 /* OfferCustomCell */,
 				AF9FFF9E1CFB426F006761F3 /* PowerOF7 */,
 				AFDE3F571CEEF7D9009C1180 /* ReminderCell */,
 				AF28C1691CE74AD3006F1EFD /* MenuView */,
@@ -689,6 +703,7 @@
 				AFE4FEBC1CBAF87900F0D527 /* MedicalDetailObject.swift */,
 				AF1CB6211CD55FA8008DF1C5 /* CoachDetail.swift */,
 				AFDE3F5C1CEFB6B3009C1180 /* ReminderData.swift */,
+				AF9FFFA81D04772D006761F3 /* PromoOffer.swift */,
 			);
 			path = ModelClass;
 			sourceTree = "<group>";
@@ -848,6 +863,14 @@
 				AF9FFFA11CFB5AD6006761F3 /* PowerOf7CollectionViewCell.swift */,
 			);
 			path = PowerOF7;
+			sourceTree = "<group>";
+		};
+		AF9FFFA51D045E31006761F3 /* OfferCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF9FFFA61D045F00006761F3 /* OfferTableViewCell.swift */,
+			);
+			path = OfferCustomCell;
 			sourceTree = "<group>";
 		};
 		AFD116971CC0C2FE0033A074 /* Pagging */ = {
@@ -1200,6 +1223,7 @@
 				3A7D86C31C6F6C7D00BCF7E7 /* LoginButtonView.swift in Sources */,
 				AF16F54B1CCD08E700EF3430 /* ThankYouViewController.swift in Sources */,
 				AF16F5451CCCDA8500EF3430 /* EightbuttonTableViewCell.swift in Sources */,
+				AF9FFFA91D04772D006761F3 /* PromoOffer.swift in Sources */,
 				AF9FFF9B1CF99E3C006761F3 /* activityIndicator.swift in Sources */,
 				AF6B95F01CA3FFB3002D5AD6 /* IQUIWindow+Hierarchy.swift in Sources */,
 				AFDE3F611CF0512A009C1180 /* TimeSelectionViewController.swift in Sources */,
@@ -1226,6 +1250,8 @@
 				AF55E8A31CA7A77F001636B0 /* loginData.swift in Sources */,
 				AF5D60AF1CDB1EAE00F823A7 /* ProgressViewController.swift in Sources */,
 				AF1CB6221CD55FA8008DF1C5 /* CoachDetail.swift in Sources */,
+				AF9FFFAF1D04A146006761F3 /* DottedBorder.swift in Sources */,
+				AF9FFFAB1D0492C3006761F3 /* Date.swift in Sources */,
 				AF324B9E1CDD39BF0043F854 /* Power7ProtienViewController.swift in Sources */,
 				AFDE3F591CEEF7F3009C1180 /* CustomHeaderCell.swift in Sources */,
 				AFD116A21CC0C2FE0033A074 /* PersonalViewController.swift in Sources */,
@@ -1236,6 +1262,7 @@
 				AF6B95ED1CA3FFB3002D5AD6 /* IQUITextFieldView+Additions.swift in Sources */,
 				AF16F53B1CCC085300EF3430 /* HeaderWithSwitchTableViewCell.swift in Sources */,
 				AFD116861CBE198F0033A074 /* WeightTypeSelectionTableViewCell.swift in Sources */,
+				AF9FFFA71D045F00006761F3 /* OfferTableViewCell.swift in Sources */,
 				AF324B9A1CDD39630043F854 /* Power7SleepViewController.swift in Sources */,
 				AF324BA41CDD3A1A0043F854 /* Power7NutsViewController.swift in Sources */,
 				AF6B95EF1CA3FFB3002D5AD6 /* IQUIViewController+Additions.swift in Sources */,
@@ -1307,6 +1334,7 @@
 				B2D652431CF38EFA0090389F /* LNChoosePlanViewController.m in Sources */,
 				AF16F5291CC8242300EF3430 /* LifeStyle2ViewController.swift in Sources */,
 				3AFD06FF1C7367A900549C48 /* ColorExtension.swift in Sources */,
+				AF9FFFA41D042202006761F3 /* PromoOfferViewController.swift in Sources */,
 				AF16F52D1CC8A75200EF3430 /* LifeStyle3ViewController.swift in Sources */,
 				AF6B95F71CA3FFB3002D5AD6 /* IQTitleBarButtonItem.swift in Sources */,
 				AF16F5231CC61B7A00EF3430 /* DescriptionTableViewCell.swift in Sources */,

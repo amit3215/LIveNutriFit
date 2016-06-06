@@ -36,7 +36,12 @@ import UIKit
             let mainViewController = storyboard.instantiateViewControllerWithIdentifier("PayU") as! ViewController
             let nav:UINavigationController = UINavigationController(rootViewController:mainViewController)
             appDelegate.window?.rootViewController = nav
-        
+        case 3:
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainViewController = storyboard.instantiateViewControllerWithIdentifier("OfferZone") as! PromoOfferViewController
+            let nav:UINavigationController = UINavigationController(rootViewController:mainViewController)
+            appDelegate.window?.rootViewController = nav
+            
         default:
             print("default\n", terminator: "")
         }
