@@ -147,6 +147,8 @@
 		AFE4FEBD1CBAF87900F0D527 /* MedicalDetailObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEBC1CBAF87900F0D527 /* MedicalDetailObject.swift */; };
 		AFE4FEBF1CBB87D200F0D527 /* lifeStyleFiveButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEBE1CBB87D100F0D527 /* lifeStyleFiveButtonTableViewCell.swift */; };
 		AFE4FEC31CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEC21CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift */; };
+		AFEDA2EA1D06A43700145971 /* offerHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDA2E91D06A43700145971 /* offerHeaderTableViewCell.swift */; };
+		AFEDA2EC1D06ACE700145971 /* NutriFitPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDA2EB1D06ACE700145971 /* NutriFitPlanViewController.swift */; };
 		B20B769D1CEE4CA200B985A7 /* LNSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B769A1CEE4CA200B985A7 /* LNSettingViewController.m */; };
 		B20B76A41CEE4D5600B985A7 /* LNPlanPriceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B76A21CEE4D5600B985A7 /* LNPlanPriceTableViewCell.m */; };
 		B20B76A51CEE4D5600B985A7 /* LNPlanPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20B76A31CEE4D5600B985A7 /* LNPlanPriceTableViewCell.xib */; };
@@ -342,6 +344,8 @@
 		AFE4FEBC1CBAF87900F0D527 /* MedicalDetailObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalDetailObject.swift; sourceTree = "<group>"; };
 		AFE4FEBE1CBB87D100F0D527 /* lifeStyleFiveButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lifeStyleFiveButtonTableViewCell.swift; sourceTree = "<group>"; };
 		AFE4FEC21CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeStyleMultipleSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		AFEDA2E91D06A43700145971 /* offerHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = offerHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AFEDA2EB1D06ACE700145971 /* NutriFitPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutriFitPlanViewController.swift; sourceTree = "<group>"; };
 		B20B76991CEE4CA200B985A7 /* LNSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNSettingViewController.h; sourceTree = "<group>"; };
 		B20B769A1CEE4CA200B985A7 /* LNSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNSettingViewController.m; sourceTree = "<group>"; };
 		B20B76A11CEE4D5600B985A7 /* LNPlanPriceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPlanPriceTableViewCell.h; sourceTree = "<group>"; };
@@ -527,6 +531,7 @@
 				AF1CB6181CD400D7008DF1C5 /* CoachDetailsViewController.swift */,
 				AF1CB61D1CD46FE7008DF1C5 /* CoachModelViewViewController.swift */,
 				AF9FFFA31D042202006761F3 /* PromoOfferViewController.swift */,
+				AFEDA2EB1D06ACE700145971 /* NutriFitPlanViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -869,6 +874,7 @@
 			isa = PBXGroup;
 			children = (
 				AF9FFFA61D045F00006761F3 /* OfferTableViewCell.swift */,
+				AFEDA2E91D06A43700145971 /* offerHeaderTableViewCell.swift */,
 			);
 			path = OfferCustomCell;
 			sourceTree = "<group>";
@@ -1208,6 +1214,7 @@
 				AF16F5181CC4288100EF3430 /* sliderTableViewCell.swift in Sources */,
 				AFDE3F5B1CEF0105009C1180 /* ReminderModificationViewController.swift in Sources */,
 				AFDE3F671CF1D40A009C1180 /* ConverInJson.swift in Sources */,
+				AFEDA2EA1D06A43700145971 /* offerHeaderTableViewCell.swift in Sources */,
 				AFE4FEBD1CBAF87900F0D527 /* MedicalDetailObject.swift in Sources */,
 				AF324BA21CDD3A050043F854 /* Power7FruitsViewController.swift in Sources */,
 				AF6B95F41CA3FFB3002D5AD6 /* IQKeyboardReturnKeyHandler.swift in Sources */,
@@ -1256,6 +1263,7 @@
 				AFDE3F591CEEF7F3009C1180 /* CustomHeaderCell.swift in Sources */,
 				AFD116A21CC0C2FE0033A074 /* PersonalViewController.swift in Sources */,
 				AF5A04081CE4497E0081435D /* BMIStatusTableViewCell.swift in Sources */,
+				AFEDA2EC1D06ACE700145971 /* NutriFitPlanViewController.swift in Sources */,
 				AF28C16F1CE84894006F1EFD /* CoachTableViewCell.swift in Sources */,
 				AF16F5251CC823E100EF3430 /* Medical2ViewController.swift in Sources */,
 				AF6B95F91CA3FFB3002D5AD6 /* IQUIView+IQKeyboardToolbar.swift in Sources */,

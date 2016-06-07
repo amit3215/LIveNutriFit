@@ -26,12 +26,26 @@ import UIKit
         print("View Controller is : \(topViewController) \n", terminator: "")
         switch(index){
         case 0:
-            print("Home\n", terminator: "")
-            break
-        case 1:
-            print("Play\n", terminator: "")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let appDelegate = UIApplication.sharedApplication().delegate! as! AppDelegate
+            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("TabBarController")
+            initialViewController.tabBarController?.selectedIndex = 1
+            appDelegate.window?.rootViewController = initialViewController
+            appDelegate.window?.makeKeyAndVisible()
+            
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let mainViewController = storyboard.instantiateViewControllerWithIdentifier("OfferZone") as! PromoOfferViewController
+//            let nav:UINavigationController = UINavigationController(rootViewController:mainViewController)
+//            appDelegate.window?.rootViewController = mainViewController
             break
         case 2:
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let appDelegate = UIApplication.sharedApplication().delegate! as! AppDelegate
+            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("TabBarController")
+            initialViewController.tabBarController?.selectedIndex = 0
+            appDelegate.window?.rootViewController = initialViewController
+            appDelegate.window?.makeKeyAndVisible()
+        case 4:
             let storyboard = UIStoryboard(name: "MainPayU", bundle: nil)
             let mainViewController = storyboard.instantiateViewControllerWithIdentifier("PayU") as! ViewController
             let nav:UINavigationController = UINavigationController(rootViewController:mainViewController)

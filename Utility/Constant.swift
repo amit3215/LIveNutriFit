@@ -26,6 +26,7 @@ let kManagePowerOfSevenPoint = "ManagePowerOfSevenPoint";// manage power of seve
 let kSetReminderOffV2 = "SetReminderOffV2";// set reminder on and off
 let kPatient_GetDashboardDetails = "Patient_GetDashboardDetails"; // dashboard data
 let kPromoDiscount_GetList = "PromoDiscount_GetList" // get offer data
+let kGetMealAndFitnesslPlanV5 = "GetMealAndFitnesslPlanV5" // get nutrifit plan data
 // uibutton title
 // screen Title
 let kTitle_Register = "REGISTER";
@@ -96,6 +97,9 @@ let kJsonKey_DeviceInfo = "DeviceInfo";
 let kJsonKey_PatientName = "PatientName";
 let kJsonKey_MobileNo = "MobileNo";
 let kJsonKey_PatientId = "PatientId";
+// nutrifit plan
+let kJsonKey_Patientid = "Patientid";
+let kJsonKey_IsWeightJounryChange = "IsWeightJounryChange";
 let kJsonKey_Module = "Module";
 let kJsonKey_StageId = "StageId";
 let kJsonKey_PromoCode = "PromoCode"
