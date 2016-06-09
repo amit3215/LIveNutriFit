@@ -53,6 +53,10 @@
 		AF1CB61C1CD46C47008DF1C5 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CB61B1CD46C47008DF1C5 /* CAPSPageMenu.swift */; };
 		AF1CB61E1CD46FE7008DF1C5 /* CoachModelViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CB61D1CD46FE7008DF1C5 /* CoachModelViewViewController.swift */; };
 		AF1CB6221CD55FA8008DF1C5 /* CoachDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CB6211CD55FA8008DF1C5 /* CoachDetail.swift */; };
+		AF1D84DB1D0941CD00BE00EF /* offerHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D84D91D0941CD00BE00EF /* offerHeaderTableViewCell.swift */; };
+		AF1D84DC1D0941CD00BE00EF /* OfferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D84DA1D0941CD00BE00EF /* OfferTableViewCell.swift */; };
+		AF1D84DF1D0941F800BE00EF /* PowerOf7CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D84DE1D0941F800BE00EF /* PowerOf7CollectionViewCell.swift */; };
+		AF1D84E21D09429D00BE00EF /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D84E11D09429D00BE00EF /* SwiftLoader.swift */; };
 		AF28C16B1CE74AFD006F1EFD /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C16A1CE74AFD006F1EFD /* MenuCollectionViewCell.swift */; };
 		AF28C16D1CE79BF5006F1EFD /* ButtonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C16C1CE79BF5006F1EFD /* ButtonColor.swift */; };
 		AF28C16F1CE84894006F1EFD /* CoachTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28C16E1CE84894006F1EFD /* CoachTableViewCell.swift */; };
@@ -112,12 +116,9 @@
 		AF9077791CE510050093F87B /* Utiity.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9077691CE510050093F87B /* Utiity.m */; };
 		AF90777A1CE510050093F87B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF90776B1CE510050093F87B /* ViewController.m */; };
 		AF9FFF961CF8E7B5006761F3 /* PowerOfSevenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFF951CF8E7B5006761F3 /* PowerOfSevenModel.swift */; };
-		AF9FFF991CF99DB7006761F3 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFF981CF99DB7006761F3 /* SwiftLoader.swift */; };
 		AF9FFF9B1CF99E3C006761F3 /* activityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFF9A1CF99E3C006761F3 /* activityIndicator.swift */; };
 		AF9FFF9D1CFB1671006761F3 /* CreateRichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFF9C1CFB1671006761F3 /* CreateRichText.swift */; };
-		AF9FFFA21CFB5AD6006761F3 /* PowerOf7CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFA11CFB5AD6006761F3 /* PowerOf7CollectionViewCell.swift */; };
 		AF9FFFA41D042202006761F3 /* PromoOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFA31D042202006761F3 /* PromoOfferViewController.swift */; };
-		AF9FFFA71D045F00006761F3 /* OfferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFA61D045F00006761F3 /* OfferTableViewCell.swift */; };
 		AF9FFFA91D04772D006761F3 /* PromoOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFA81D04772D006761F3 /* PromoOffer.swift */; };
 		AF9FFFAB1D0492C3006761F3 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFAA1D0492C3006761F3 /* Date.swift */; };
 		AF9FFFAF1D04A146006761F3 /* DottedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9FFFAE1D04A146006761F3 /* DottedBorder.swift */; };
@@ -147,7 +148,6 @@
 		AFE4FEBD1CBAF87900F0D527 /* MedicalDetailObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEBC1CBAF87900F0D527 /* MedicalDetailObject.swift */; };
 		AFE4FEBF1CBB87D200F0D527 /* lifeStyleFiveButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEBE1CBB87D100F0D527 /* lifeStyleFiveButtonTableViewCell.swift */; };
 		AFE4FEC31CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE4FEC21CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift */; };
-		AFEDA2EA1D06A43700145971 /* offerHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDA2E91D06A43700145971 /* offerHeaderTableViewCell.swift */; };
 		AFEDA2EC1D06ACE700145971 /* NutriFitPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDA2EB1D06ACE700145971 /* NutriFitPlanViewController.swift */; };
 		B20B769D1CEE4CA200B985A7 /* LNSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B769A1CEE4CA200B985A7 /* LNSettingViewController.m */; };
 		B20B76A41CEE4D5600B985A7 /* LNPlanPriceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B76A21CEE4D5600B985A7 /* LNPlanPriceTableViewCell.m */; };
@@ -237,6 +237,10 @@
 		AF1CB61B1CD46C47008DF1C5 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		AF1CB61D1CD46FE7008DF1C5 /* CoachModelViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachModelViewViewController.swift; sourceTree = "<group>"; };
 		AF1CB6211CD55FA8008DF1C5 /* CoachDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachDetail.swift; sourceTree = "<group>"; };
+		AF1D84D91D0941CD00BE00EF /* offerHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = offerHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AF1D84DA1D0941CD00BE00EF /* OfferTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferTableViewCell.swift; sourceTree = "<group>"; };
+		AF1D84DE1D0941F800BE00EF /* PowerOf7CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerOf7CollectionViewCell.swift; sourceTree = "<group>"; };
+		AF1D84E11D09429D00BE00EF /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
 		AF28C16A1CE74AFD006F1EFD /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF28C16C1CE79BF5006F1EFD /* ButtonColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonColor.swift; sourceTree = "<group>"; };
 		AF28C16E1CE84894006F1EFD /* CoachTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachTableViewCell.swift; sourceTree = "<group>"; };
@@ -309,12 +313,9 @@
 		AF90776A1CE510050093F87B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AF90776B1CE510050093F87B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AF9FFF951CF8E7B5006761F3 /* PowerOfSevenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerOfSevenModel.swift; sourceTree = "<group>"; };
-		AF9FFF981CF99DB7006761F3 /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
 		AF9FFF9A1CF99E3C006761F3 /* activityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = activityIndicator.swift; sourceTree = "<group>"; };
 		AF9FFF9C1CFB1671006761F3 /* CreateRichText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRichText.swift; sourceTree = "<group>"; };
-		AF9FFFA11CFB5AD6006761F3 /* PowerOf7CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerOf7CollectionViewCell.swift; sourceTree = "<group>"; };
 		AF9FFFA31D042202006761F3 /* PromoOfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoOfferViewController.swift; sourceTree = "<group>"; };
-		AF9FFFA61D045F00006761F3 /* OfferTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferTableViewCell.swift; sourceTree = "<group>"; };
 		AF9FFFA81D04772D006761F3 /* PromoOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoOffer.swift; sourceTree = "<group>"; };
 		AF9FFFAA1D0492C3006761F3 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		AF9FFFAE1D04A146006761F3 /* DottedBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DottedBorder.swift; sourceTree = "<group>"; };
@@ -344,7 +345,6 @@
 		AFE4FEBC1CBAF87900F0D527 /* MedicalDetailObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalDetailObject.swift; sourceTree = "<group>"; };
 		AFE4FEBE1CBB87D100F0D527 /* lifeStyleFiveButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lifeStyleFiveButtonTableViewCell.swift; sourceTree = "<group>"; };
 		AFE4FEC21CBB9B3500F0D527 /* LifeStyleMultipleSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeStyleMultipleSelectionTableViewCell.swift; sourceTree = "<group>"; };
-		AFEDA2E91D06A43700145971 /* offerHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = offerHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		AFEDA2EB1D06ACE700145971 /* NutriFitPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutriFitPlanViewController.swift; sourceTree = "<group>"; };
 		B20B76991CEE4CA200B985A7 /* LNSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNSettingViewController.h; sourceTree = "<group>"; };
 		B20B769A1CEE4CA200B985A7 /* LNSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNSettingViewController.m; sourceTree = "<group>"; };
@@ -464,7 +464,7 @@
 		3A7D86A81C6F522900BCF7E7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				AF9FFF971CF99DB7006761F3 /* SwiftLoader */,
+				AF1D84E01D09429D00BE00EF /* SwiftLoader */,
 				AF1CB61A1CD46C47008DF1C5 /* Tab Bar */,
 				AFE4FEB11CBA5F6900F0D527 /* DatePickerPopup */,
 				AF6B95D11CA3FFB3002D5AD6 /* IQKeyboardManagerSwift */,
@@ -658,6 +658,31 @@
 			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
+		AF1D84D81D0941CD00BE00EF /* OfferCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D84D91D0941CD00BE00EF /* offerHeaderTableViewCell.swift */,
+				AF1D84DA1D0941CD00BE00EF /* OfferTableViewCell.swift */,
+			);
+			path = OfferCustomCell;
+			sourceTree = "<group>";
+		};
+		AF1D84DD1D0941F800BE00EF /* PowerOF7 */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D84DE1D0941F800BE00EF /* PowerOf7CollectionViewCell.swift */,
+			);
+			path = PowerOF7;
+			sourceTree = "<group>";
+		};
+		AF1D84E01D09429D00BE00EF /* SwiftLoader */ = {
+			isa = PBXGroup;
+			children = (
+				AF1D84E11D09429D00BE00EF /* SwiftLoader.swift */,
+			);
+			path = SwiftLoader;
+			sourceTree = "<group>";
+		};
 		AF28C1691CE74AD3006F1EFD /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,8 +708,8 @@
 		AF55E89B1CA7A77F001636B0 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
-				AF9FFFA51D045E31006761F3 /* OfferCustomCell */,
-				AF9FFF9E1CFB426F006761F3 /* PowerOF7 */,
+				AF1D84DD1D0941F800BE00EF /* PowerOF7 */,
+				AF1D84D81D0941CD00BE00EF /* OfferCustomCell */,
 				AFDE3F571CEEF7D9009C1180 /* ReminderCell */,
 				AF28C1691CE74AD3006F1EFD /* MenuView */,
 				AF5A04061CE449550081435D /* DashBordCustom cell */,
@@ -852,31 +877,6 @@
 				B20B76A61CEE4D5F00B985A7 /* Views */,
 			);
 			path = PayU;
-			sourceTree = "<group>";
-		};
-		AF9FFF971CF99DB7006761F3 /* SwiftLoader */ = {
-			isa = PBXGroup;
-			children = (
-				AF9FFF981CF99DB7006761F3 /* SwiftLoader.swift */,
-			);
-			path = SwiftLoader;
-			sourceTree = "<group>";
-		};
-		AF9FFF9E1CFB426F006761F3 /* PowerOF7 */ = {
-			isa = PBXGroup;
-			children = (
-				AF9FFFA11CFB5AD6006761F3 /* PowerOf7CollectionViewCell.swift */,
-			);
-			path = PowerOF7;
-			sourceTree = "<group>";
-		};
-		AF9FFFA51D045E31006761F3 /* OfferCustomCell */ = {
-			isa = PBXGroup;
-			children = (
-				AF9FFFA61D045F00006761F3 /* OfferTableViewCell.swift */,
-				AFEDA2E91D06A43700145971 /* offerHeaderTableViewCell.swift */,
-			);
-			path = OfferCustomCell;
 			sourceTree = "<group>";
 		};
 		AFD116971CC0C2FE0033A074 /* Pagging */ = {
@@ -1214,7 +1214,7 @@
 				AF16F5181CC4288100EF3430 /* sliderTableViewCell.swift in Sources */,
 				AFDE3F5B1CEF0105009C1180 /* ReminderModificationViewController.swift in Sources */,
 				AFDE3F671CF1D40A009C1180 /* ConverInJson.swift in Sources */,
-				AFEDA2EA1D06A43700145971 /* offerHeaderTableViewCell.swift in Sources */,
+				AF1D84DB1D0941CD00BE00EF /* offerHeaderTableViewCell.swift in Sources */,
 				AFE4FEBD1CBAF87900F0D527 /* MedicalDetailObject.swift in Sources */,
 				AF324BA21CDD3A050043F854 /* Power7FruitsViewController.swift in Sources */,
 				AF6B95F41CA3FFB3002D5AD6 /* IQKeyboardReturnKeyHandler.swift in Sources */,
@@ -1224,7 +1224,6 @@
 				AF28C1731CE8E4E2006F1EFD /* WeightLossHeaderTableViewCell.swift in Sources */,
 				AFE4FEBB1CBAEE1300F0D527 /* MedicalBaseTableViewCell.swift in Sources */,
 				B2D652381CF388F40090389F /* LNBaseViewController.m in Sources */,
-				AF9FFF991CF99DB7006761F3 /* SwiftLoader.swift in Sources */,
 				AF1CB61E1CD46FE7008DF1C5 /* CoachModelViewViewController.swift in Sources */,
 				AF28C1F51CEA5CE5006F1EFD /* demo.swift in Sources */,
 				3A7D86C31C6F6C7D00BCF7E7 /* LoginButtonView.swift in Sources */,
@@ -1270,7 +1269,6 @@
 				AF6B95ED1CA3FFB3002D5AD6 /* IQUITextFieldView+Additions.swift in Sources */,
 				AF16F53B1CCC085300EF3430 /* HeaderWithSwitchTableViewCell.swift in Sources */,
 				AFD116861CBE198F0033A074 /* WeightTypeSelectionTableViewCell.swift in Sources */,
-				AF9FFFA71D045F00006761F3 /* OfferTableViewCell.swift in Sources */,
 				AF324B9A1CDD39630043F854 /* Power7SleepViewController.swift in Sources */,
 				AF324BA41CDD3A1A0043F854 /* Power7NutsViewController.swift in Sources */,
 				AF6B95EF1CA3FFB3002D5AD6 /* IQUIViewController+Additions.swift in Sources */,
@@ -1305,7 +1303,6 @@
 				AF72ADB91CD00BD600C3F47A /* DocumentSelectionPopUpViewController.swift in Sources */,
 				AF6B95F21CA3FFB3002D5AD6 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				AF9FFF9D1CFB1671006761F3 /* CreateRichText.swift in Sources */,
-				AF9FFFA21CFB5AD6006761F3 /* PowerOf7CollectionViewCell.swift in Sources */,
 				AF324BA61CDD3A390043F854 /* Power7ExerciseViewController.swift in Sources */,
 				B2D652401CF38CF20090389F /* LNPlanPriceViewController.m in Sources */,
 				AF16F50B1CC1A20A00EF3430 /* WeightPickerTableViewCell.swift in Sources */,
@@ -1316,6 +1313,7 @@
 				AF16F53F1CCC087C00EF3430 /* DrinkPickerTableViewCell.swift in Sources */,
 				AFD1169F1CC0C2FE0033A074 /* LifeStyleViewController.swift in Sources */,
 				AF55E8A51CA7A77F001636B0 /* ParserApi.swift in Sources */,
+				AF1D84E21D09429D00BE00EF /* SwiftLoader.swift in Sources */,
 				AFDE3F561CEE7348009C1180 /* ReminderViewController.swift in Sources */,
 				AF28C16B1CE74AFD006F1EFD /* MenuCollectionViewCell.swift in Sources */,
 				B20B769D1CEE4CA200B985A7 /* LNSettingViewController.m in Sources */,
@@ -1340,6 +1338,8 @@
 				AF324B9C1CDD398C0043F854 /* Power7WaterViewController.swift in Sources */,
 				AF9077711CE510050093F87B /* LNPlanCellTableViewCell.m in Sources */,
 				B2D652431CF38EFA0090389F /* LNChoosePlanViewController.m in Sources */,
+				AF1D84DF1D0941F800BE00EF /* PowerOf7CollectionViewCell.swift in Sources */,
+				AF1D84DC1D0941CD00BE00EF /* OfferTableViewCell.swift in Sources */,
 				AF16F5291CC8242300EF3430 /* LifeStyle2ViewController.swift in Sources */,
 				3AFD06FF1C7367A900549C48 /* ColorExtension.swift in Sources */,
 				AF9FFFA41D042202006761F3 /* PromoOfferViewController.swift in Sources */,
@@ -1502,6 +1502,7 @@
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "LIveNutriFit-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -1524,6 +1525,7 @@
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "LIveNutriFit-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Release;
 		};
